@@ -20,7 +20,7 @@ $BIN init $STARTING_VALIDATOR_HOME --chain-id=$CHAIN_ID validator1
 ## testing the generated one with the default values provided by the module.
 
 # add in denom metadata for both native tokens
-jq '.app_state.bank.denom_metadata += [{"name": "Foo Token", "symbol": "FOO", "base": "footoken", display: "mfootoken", "description": "A non-staking test token", "denom_units": [{"denom": "footoken", "exponent": 0}, {"denom": "mfootoken", "exponent": 6}]},{"name": "NOM", "symbol": "NOM", "base": "anom", display: "nom", "description": "Nom token", "denom_units": [{"denom": "anom", "exponent": 0}, {"denom": "nom", "exponent": 18}]}]' /validator$STARTING_VALIDATOR/config/genesis.json > /metadata-genesis.json
+jq '.app_state.bank.denom_metadata += [{"name": "Foo Token", "symbol": "FOO", "base": "footoken", display: "mfootoken", "description": "A non-staking test token", "denom_units": [{"denom": "footoken", "exponent": 0}, {"denom": "mfootoken", "exponent": 6}]},{"name": "KYRA", "symbol": "KYRA", "base": "anom", display: "kyra", "description": "Nom token", "denom_units": [{"denom": "anom", "exponent": 0}, {"denom": "kyra", "exponent": 18}]}]' /validator$STARTING_VALIDATOR/config/genesis.json > /metadata-genesis.json
 
 # a 60 second voting period to allow us to pass governance proposals in the tests
 jq '.app_state.gov.voting_params.voting_period = "60s"' /metadata-genesis.json > /community-pool-genesis.json

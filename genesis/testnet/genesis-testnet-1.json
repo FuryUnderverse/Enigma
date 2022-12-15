@@ -90570,7 +90570,7 @@
       ],
       "denom_metadata": [
         {
-          "description": "NOM coin",
+          "description": "KYRA coin",
           "denom_units": [
             {
               "denom": "anom",
@@ -90578,15 +90578,15 @@
               "aliases": []
             },
             {
-              "denom": "nom",
+              "denom": "kyra",
               "exponent": 18,
               "aliases": []
             }
           ],
           "base": "anom",
-          "display": "nom",
-          "name": "NOM",
-          "symbol": "NOM"
+          "display": "kyra",
+          "name": "KYRA",
+          "symbol": "KYRA"
         }
       ]
     },

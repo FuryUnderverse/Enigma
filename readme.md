@@ -6,7 +6,7 @@ Enigma is an application-specific blockchain built to power a decentralized exch
 
 As a multi-chain ecosystem based on the Cosmos software development kit, it leverages the inter-blockchain communication protocol and implements bridges between blockchains like Ethereum, Avalanche, EVM chains, and others TBA.
 
-Users can easily manage assets from connected networks via Enigma Access (multi-chain wallet), efficiently trade digital assets on the decentralized Enigma Exchange supporting both AMM and orderbook trading (limit orders, stop loss, market), and mint decentralized stablecoins through the Enigma Reserve using NOM, the protocol token, as collateral.
+Users can easily manage assets from connected networks via Enigma Access (multi-chain wallet), efficiently trade digital assets on the decentralized Enigma Exchange supporting both AMM and orderbook trading (limit orders, stop loss, market), and mint decentralized stablecoins through the Enigma Reserve using KYRA, the protocol token, as collateral.
 
 ✨[Official Website](https://enigma.io/)
 ✨[Telegram Discussion](https://t.me/furyunderverse)
