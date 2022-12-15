@@ -46,7 +46,7 @@ make build
 mv enigmad $ENIGMA_HOME/cosmovisor/genesis/bin/enigmad
 
 echo "-------------------installing cosmovisor-----------------------"
-git clone -b $COSMOVISOR_VERSION https://github.com/furyunderverse/enigma-sdk $COSMOVISOR_SRC
+git clone -b $COSMOVISOR_VERSION https://github.com/onomyprotocol/onomy-sdk $COSMOVISOR_SRC
 cd $COSMOVISOR_SRC
 make cosmovisor
 cp cosmovisor/cosmovisor $ENIGMA_HOME/bin/cosmovisor

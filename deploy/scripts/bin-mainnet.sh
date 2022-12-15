@@ -27,7 +27,7 @@ curl -LO https://github.com/furyunderverse/enigma/releases/download/$ENIGMA_VERS
 mv enigmad $ENIGMA_HOME/cosmovisor/genesis/bin/enigmad
 
 echo "----------------------installing cosmovisor---------------"
-curl -LO https://github.com/furyunderverse/enigma-sdk/releases/download/$COSMOVISOR_VERSION/cosmovisor
+curl -LO https://github.com/onomyprotocol/onomy-sdk/releases/download/$COSMOVISOR_VERSION/cosmovisor
 mv cosmovisor $ENIGMA_HOME/bin/cosmovisor
 
 echo "-------------------adding binaries to path-----------------------"
