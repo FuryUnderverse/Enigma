@@ -21,9 +21,9 @@ import (
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 	sdkTypes "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/onomyprotocol/onomy/app"
-	onomydCmd "github.com/onomyprotocol/onomy/cmd/onomyd/cmd"
-	"github.com/onomyprotocol/onomy/testutil/retry"
+	"github.com/furyunderverse/enigma/app"
+	enigmadCmd "github.com/furyunderverse/enigma/cmd/enigmad/cmd"
+	"github.com/furyunderverse/enigma/testutil/retry"
 )
 
 const (
@@ -54,23 +54,23 @@ const (
 	// TestChainValidator1EthAddress is default validator eth pub key.
 	TestChainValidator1EthAddress = "0x2d9480eBA3A001033a0B8c3Df26039FD3433D55d"
 
-	// OnomyGrpcHost is default host.
-	OnomyGrpcHost = "127.0.0.1"
-	// OnomyGrpcPort is default port.
-	OnomyGrpcPort = "9090"
+	// EnigmaGrpcHost is default host.
+	EnigmaGrpcHost = "127.0.0.1"
+	// EnigmaGrpcPort is default port.
+	EnigmaGrpcPort = "9090"
 
 	// GravityBridge is the prefix/name for the gravity bridge.
 	GravityBridge = "gravity"
 )
 
-// OnomyChain is test struct for the chain running.
-type OnomyChain struct {
+// EnigmaChain is test struct for the chain running.
+type EnigmaChain struct {
 	homeFlag  string
 	Validator keyring.KeyOutput
 }
 
-// NewOnomyChain creates a new OnomyChain.
-func NewOnomyChain() (*OnomyChain, error) {
+// NewEnigmaChain creates a new EnigmaChain.
+func NewEnigmaChain() (*EnigmaChain, error) {
 	// prepare test folder for genesys and data files
 	dir, err := ioutil.TempDir("", "")
 	if err != nil {
@@ -134,27 +134,27 @@ func NewOnomyChain() (*OnomyChain, error) {
 	// gravity collect gentx
 	ExecuteChainCmd(fmt.Sprintf("%s collect-gentxs", GravityBridge), homeFlag)
 
-	return &OnomyChain{
+	return &EnigmaChain{
 		homeFlag:  homeFlag,
 		Validator: val1KeyOutput,
 	}, nil
 }
 
-// Start start the OnomyChain.
-func (oc *OnomyChain) Start(timeout time.Duration) error {
+// Start start the EnigmaChain.
+func (oc *EnigmaChain) Start(timeout time.Duration) error {
 	go ExecuteChainCmd("start", oc.homeFlag)
 
 	// wait for grpc port
-	return retry.AwaitForPort(OnomyGrpcHost, OnomyGrpcPort, timeout)
+	return retry.AwaitForPort(EnigmaGrpcHost, EnigmaGrpcPort, timeout)
 }
 
-// Stop stops the OnomyChain.
-func (oc *OnomyChain) Stop() {
+// Stop stops the EnigmaChain.
+func (oc *EnigmaChain) Stop() {
 	ExecuteChainCmd("stop", oc.homeFlag)
 }
 
 // GetAccountBalance return the 'address' balance.
-func (oc *OnomyChain) GetAccountBalance(address string) ([]sdkTypes.Coin, error) {
+func (oc *EnigmaChain) GetAccountBalance(address string) ([]sdkTypes.Coin, error) {
 	balanceString := ExecuteChainCmd("query bank balances", address, oc.homeFlag, jsonOutFlag)
 	var balances struct {
 		Balances []sdkTypes.Coin `json:"balances"`
@@ -165,14 +165,14 @@ func (oc *OnomyChain) GetAccountBalance(address string) ([]sdkTypes.Coin, error)
 	return balances.Balances, nil
 }
 
-// ExecuteChainCmd executes any cmd on the onomyd cli.
+// ExecuteChainCmd executes any cmd on the enigmad cli.
 func ExecuteChainCmd(cmd string, args ...string) string {
 	oldArgs := os.Args
 	// this call is required because otherwise flags panics, if args are set between flag.Parse calls
 	flag.CommandLine = flag.NewFlagSet("command", flag.ExitOnError)
 	// we need a value to set Args[0] to, cause flag begins parsing at Args[1]
 	args = append(strings.Fields(cmd), args...)
-	os.Args = append([]string{"onomyd"}, args...)
+	os.Args = append([]string{"enigmad"}, args...)
 
 	// rests config seal protection
 	config := sdkTypes.GetConfig()
@@ -189,7 +189,7 @@ func ExecuteChainCmd(cmd string, args ...string) string {
 }
 
 func mainTestRunner() {
-	rootCmd, _ := onomydCmd.NewRootCmd()
+	rootCmd, _ := enigmadCmd.NewRootCmd()
 	if err := svrcmd.Execute(rootCmd, app.DefaultNodeHome); err != nil {
 		os.Exit(1)
 	}

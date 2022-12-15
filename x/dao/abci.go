@@ -7,8 +7,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/telemetry"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/onomyprotocol/onomy/x/dao/keeper"
-	"github.com/onomyprotocol/onomy/x/dao/types"
+	"github.com/furyunderverse/enigma/x/dao/keeper"
+	"github.com/furyunderverse/enigma/x/dao/types"
 )
 
 // EndBlocker calls the dao re-balancing every block.

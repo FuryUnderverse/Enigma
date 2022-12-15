@@ -1,4 +1,4 @@
-// Package cmd contains cli wrapper for the onomy cli.
+// Package cmd contains cli wrapper for the enigma cli.
 package cmd
 
 import (
@@ -12,14 +12,14 @@ import (
 	"github.com/tendermint/tendermint/libs/cli"
 
 	gravitycmd "github.com/onomyprotocol/cosmos-gravity-bridge/module/cmd/gravity/cmd"
-	"github.com/onomyprotocol/onomy/app"
+	"github.com/furyunderverse/enigma/app"
 )
 
 const (
 	gravityName = "gravity"
 )
 
-// NewRootCmd initiates the cli for onomy chain.
+// NewRootCmd initiates the cli for enigma chain.
 func NewRootCmd() (*cobra.Command, cosmoscmd.EncodingConfig) {
 	rootCmd, encodingConfig := cosmoscmd.NewRootCmd(
 		app.Name,
@@ -43,7 +43,7 @@ func NewRootCmd() (*cobra.Command, cosmoscmd.EncodingConfig) {
 		}
 	}
 	if len(cmdsToReplace) != 0 {
-		panic("on onomy cmd replacements, not all of the commands were replaced")
+		panic("on enigma cmd replacements, not all of the commands were replaced")
 	}
 
 	// eth_keys cmd

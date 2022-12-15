@@ -8,7 +8,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/spf13/cobra"
 
-	"github.com/onomyprotocol/onomy/x/dao/types"
+	"github.com/furyunderverse/enigma/x/dao/types"
 )
 
 // GetQueryCmd returns the cli query commands for this module.

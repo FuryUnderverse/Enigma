@@ -26,4 +26,4 @@ jobs:
           context: dev/base-image
           file: dev/base-image/Dockerfile
           push: true
-          tags: onomy/dev-base:latest
+          tags: enigma/dev-base:latest

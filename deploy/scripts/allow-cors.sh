@@ -3,15 +3,15 @@ set -eu
 
 echo "Enabling cors"
 
-# Onomy home dir
-ONOMY_HOME=$HOME/.onomy
+# Enigma home dir
+ENIGMA_HOME=$HOME/.enigma
 
-# Config directories for onomy node
-ONOMY_HOME_CONFIG="$ONOMY_HOME/config"
-# Config file for onomy node
-ONOMY_NODE_CONFIG="$ONOMY_HOME_CONFIG/config.toml"
-# App config file for onomy node
-ONOMY_APP_CONFIG="$ONOMY_HOME_CONFIG/app.toml"
+# Config directories for enigma node
+ENIGMA_HOME_CONFIG="$ENIGMA_HOME/config"
+# Config file for enigma node
+ENIGMA_NODE_CONFIG="$ENIGMA_HOME_CONFIG/config.toml"
+# App config file for enigma node
+ENIGMA_APP_CONFIG="$ENIGMA_HOME_CONFIG/app.toml"
 
-crudini --set $ONOMY_NODE_CONFIG rpc cors_allowed_origins "[\"*\"]"
-crudini --set $ONOMY_APP_CONFIG api enabled-unsafe-cors true
+crudini --set $ENIGMA_NODE_CONFIG rpc cors_allowed_origins "[\"*\"]"
+crudini --set $ENIGMA_APP_CONFIG api enabled-unsafe-cors true

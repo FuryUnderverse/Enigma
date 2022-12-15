@@ -4,7 +4,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/onomyprotocol/onomy/x/dao/types"
+	"github.com/furyunderverse/enigma/x/dao/types"
 )
 
 // FundTreasuryProposal submits the FundTreasuryProposal.

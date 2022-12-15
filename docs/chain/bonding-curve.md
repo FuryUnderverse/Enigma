@@ -8,7 +8,7 @@ Continuous Tokens have other properties such as instant liquidity and determinis
 
 ## bNOM to NOM Distribution
 
-The Onomy Protocol token, _**NOM**_, is primarily distributed through a bonding curve contract deployed on the Ethereum Network that issues wrapped tokens (_**bNOM**_) that will be exchanged 1:1 with _NOM_ on the Onomy Network. _NOM_ is the functional utility token of the Onomy Network. An interface will be provided for this exchange, commonly referenced as "bridging" _bNOM_ tokens from Ethereum and into the Onomy ecosystem for _NOM_. When bridged, _bNOM_ is burned from the bonding curve, setting a new floor price of the bonding curve, and a proportionate supply is issued on the Onomy Network.
+The Enigma Protocol token, _**NOM**_, is primarily distributed through a bonding curve contract deployed on the Ethereum Network that issues wrapped tokens (_**bNOM**_) that will be exchanged 1:1 with _NOM_ on the Enigma Network. _NOM_ is the functional utility token of the Enigma Network. An interface will be provided for this exchange, commonly referenced as "bridging" _bNOM_ tokens from Ethereum and into the Enigma ecosystem for _NOM_. When bridged, _bNOM_ is burned from the bonding curve, setting a new floor price of the bonding curve, and a proportionate supply is issued on the Enigma Network.
 
 The following is the equation governing the bonding curve:
 
@@ -29,19 +29,19 @@ The bonding curve has many benefits as a way to distribute _NOM_:
 
 ## Staking & Bridge Incentives
 
-The Onomy Network Staking Curve carries a tight relationship with the Bonding Curve. The staking curve acts as a principal motivator for participants who purchased _bNOM_ to bridge from Ethereum to the Onomy Network to capture the opportunity to earn staking rewards. _NOM_ holders can either choose to become validators themselves, or delegate their _NOM_ to a validator to earn staking rewards minus a validator fee.
+The Enigma Network Staking Curve carries a tight relationship with the Bonding Curve. The staking curve acts as a principal motivator for participants who purchased _bNOM_ to bridge from Ethereum to the Enigma Network to capture the opportunity to earn staking rewards. _NOM_ holders can either choose to become validators themselves, or delegate their _NOM_ to a validator to earn staking rewards minus a validator fee.
 
 ![image](https://user-images.githubusercontent.com/76499838/145861495-9667f434-6c22-4361-a3b5-98abddcf1c9c.png)
 
-The staking rewards incentivize _bNOM_ on the bonding curve to bridge into _NOM,_ thereby driving value into the Onomy Ecosystem. Once bridged, bonding curve participants formalize their entry into Onomy and relinquish the ability to sell back to the bonding curve. Liquidity thereby comes from the ONEX and anticipated exchange listings.
+The staking rewards incentivize _bNOM_ on the bonding curve to bridge into _NOM,_ thereby driving value into the Enigma Ecosystem. Once bridged, bonding curve participants formalize their entry into Enigma and relinquish the ability to sell back to the bonding curve. Liquidity thereby comes from the ONEX and anticipated exchange listings.
 
 The bonding curve is perpetual until all 100M w_NOM_ are issued. Thus, an arbitrage opportunity may appear from time to time as the _NOM_ price on exchanges exceeds that of _bNOM_ on the bonding curve. A potential arbitrager will purchase _bNOM_, bridge to _NOM_, and send to exchanges. This incentive will further drive positive feedback mechanisms driving value, community, and adoption of _NOM,_ as more _bNOM_ is minted at more valuable prices and then bridged.
 
 ## Legal Disclaimer
 
-_Nothing in this post shall constitute or be construed as an offer to sell or the solicitation of an offer to purchase any securities. Nothing in this post shall be construed as investment advice, strategy, or investment recommendations by Onomy or any of its affiliates. This post is for informational purposes only._
+_Nothing in this post shall constitute or be construed as an offer to sell or the solicitation of an offer to purchase any securities. Nothing in this post shall be construed as investment advice, strategy, or investment recommendations by Enigma or any of its affiliates. This post is for informational purposes only._
 
-_This communication contains forward-looking statements that are based on Onomy’s beliefs and assumptions based on information currently available to Onomy. In some cases, you can identify forward-looking statements by the following words: “will,” “expect,” “would,” “intend,” “believe,” "anticipate," or other comparable terminology.These statements involve risks, uncertainties, assumptions, and other factors that may cause actual results or performance to be materially different. Onomy cannot assure you that the forward-looking statements will prove to be accurate. These forward-looking statements speak only as of the date hereof. We disclaim any obligation to update these forward-looking statements._
+_This communication contains forward-looking statements that are based on Enigma’s beliefs and assumptions based on information currently available to Enigma. In some cases, you can identify forward-looking statements by the following words: “will,” “expect,” “would,” “intend,” “believe,” "anticipate," or other comparable terminology.These statements involve risks, uncertainties, assumptions, and other factors that may cause actual results or performance to be materially different. Enigma cannot assure you that the forward-looking statements will prove to be accurate. These forward-looking statements speak only as of the date hereof. We disclaim any obligation to update these forward-looking statements._
 
 ## Risk Disclosure
 

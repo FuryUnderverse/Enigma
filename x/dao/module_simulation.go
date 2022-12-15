@@ -10,7 +10,7 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	"github.com/onomyprotocol/onomy/x/dao/types"
+	"github.com/furyunderverse/enigma/x/dao/types"
 )
 
 // avoid unused import issue.

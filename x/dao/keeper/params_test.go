@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/onomy/testutil/simapp"
-	"github.com/onomyprotocol/onomy/x/dao/types"
+	"github.com/furyunderverse/enigma/testutil/simapp"
+	"github.com/furyunderverse/enigma/x/dao/types"
 )
 
 func TestKeeper_GetAndSetParams(t *testing.T) {
@@ -31,8 +31,8 @@ func TestKeeper_GetAndSetParams(t *testing.T) {
 			simApp := simapp.Setup()
 			ctx := simApp.NewContext()
 
-			simApp.OnomyApp().DaoKeeper.SetParams(ctx, tt.args.params)
-			got := simApp.OnomyApp().DaoKeeper.GetParams(ctx)
+			simApp.EnigmaApp().DaoKeeper.SetParams(ctx, tt.args.params)
+			got := simApp.EnigmaApp().DaoKeeper.GetParams(ctx)
 
 			require.Equal(t, tt.args.params, got)
 		})

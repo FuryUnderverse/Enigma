@@ -10,9 +10,9 @@ import (
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 	"google.golang.org/grpc/status"
 
-	"github.com/onomyprotocol/onomy/testutil/network"
-	"github.com/onomyprotocol/onomy/x/dao/client/cli"
-	"github.com/onomyprotocol/onomy/x/dao/types"
+	"github.com/furyunderverse/enigma/testutil/network"
+	"github.com/furyunderverse/enigma/x/dao/client/cli"
+	"github.com/furyunderverse/enigma/x/dao/types"
 )
 
 func TestCLI_CmdShowParams(t *testing.T) {

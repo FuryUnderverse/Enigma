@@ -11,7 +11,7 @@ pushd $REPOFOLDER
 
 #docker system prune -a -f
 # Build base container
-git archive --format=tar.gz -o $DOCKERFOLDER/onomy.tar.gz --prefix=onomy/ HEAD
+git archive --format=tar.gz -o $DOCKERFOLDER/enigma.tar.gz --prefix=enigma/ HEAD
 pushd $DOCKERFOLDER
 
 # setup for Mac M1 Compatibility
@@ -22,4 +22,4 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
        PLATFORM_CMD="--platform=linux/amd64"; fi
 fi
 
-docker build -t onomy-gravity-base $PLATFORM_CMD .
+docker build -t enigma-gravity-base $PLATFORM_CMD .

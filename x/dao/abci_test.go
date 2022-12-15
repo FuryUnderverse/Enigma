@@ -13,9 +13,9 @@ import (
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/onomy/testutil/simapp"
-	"github.com/onomyprotocol/onomy/x/dao"
-	"github.com/onomyprotocol/onomy/x/dao/types"
+	"github.com/furyunderverse/enigma/testutil/simapp"
+	"github.com/furyunderverse/enigma/x/dao"
+	"github.com/furyunderverse/enigma/x/dao/types"
 )
 
 var (
@@ -186,17 +186,17 @@ func TestEndBlocker_ReBalance(t *testing.T) {
 				// create account
 				privateKey := secp256k1.GenPrivKey()
 				accountAddress := sdk.AccAddress(privateKey.PubKey().Address())
-				account := simApp.OnomyApp().AccountKeeper.NewAccount(ctx, &authtypes.BaseAccount{
+				account := simApp.EnigmaApp().AccountKeeper.NewAccount(ctx, &authtypes.BaseAccount{
 					Address: accountAddress.String(),
 				})
-				simApp.OnomyApp().AccountKeeper.SetAccount(ctx, account)
+				simApp.EnigmaApp().AccountKeeper.SetAccount(ctx, account)
 				simApp.EndBlockAndCommit(ctx)
 
 				// fund account
 				simApp.BeginNextBlock()
 				ctx = simApp.NewNextContext()
-				require.NoError(t, simApp.OnomyApp().BankKeeper.MintCoins(ctx, types.ModuleName, balance))
-				require.NoError(t, simApp.OnomyApp().BankKeeper.SendCoinsFromModuleToAccount(ctx, types.ModuleName, account.GetAddress(), balance))
+				require.NoError(t, simApp.EnigmaApp().BankKeeper.MintCoins(ctx, types.ModuleName, balance))
+				require.NoError(t, simApp.EnigmaApp().BankKeeper.SendCoinsFromModuleToAccount(ctx, types.ModuleName, account.GetAddress(), balance))
 				simApp.EndBlockAndCommit(ctx)
 
 				// create validator
@@ -215,7 +215,7 @@ func TestEndBlocker_ReBalance(t *testing.T) {
 				// assertions
 				assertValidators(t, simApp, ctx, tt.want.vals)
 
-				daoKeeper := simApp.OnomyApp().DaoKeeper
+				daoKeeper := simApp.EnigmaApp().DaoKeeper
 				gotTreasuryBalance := daoKeeper.Treasury(ctx)
 				require.Equal(t, sdk.NewCoins(tt.want.treasuryBalance).String(), gotTreasuryBalance.String())
 
@@ -313,20 +313,20 @@ func TestEndBlocker_WithdrawReward(t *testing.T) {
 			simApp.BeginNextBlock()
 			ctx := simApp.NewNextContext()
 			// update dao params to withdraw Reward
-			daoKeeper := simApp.OnomyApp().DaoKeeper
+			daoKeeper := simApp.EnigmaApp().DaoKeeper
 			daoParams := daoKeeper.GetParams(ctx)
 			daoParams.WithdrawRewardPeriod = withdrawRewardPeriod
 			daoKeeper.SetParams(ctx, daoParams)
 			// allocate validator rewards
 			for moniker := range tt.args.vals {
 				moniker := moniker
-				simApp.OnomyApp().StakingKeeper.IterateValidators(ctx, func(index int64, validator stakingtypes.ValidatorI) (stop bool) {
+				simApp.EnigmaApp().StakingKeeper.IterateValidators(ctx, func(index int64, validator stakingtypes.ValidatorI) (stop bool) {
 					if moniker == validator.GetMoniker() {
 						// mind and send coins as a validator Reward
-						require.NoError(t, simApp.OnomyApp().BankKeeper.MintCoins(ctx, types.ModuleName, sdk.NewCoins(tt.args.vals[moniker].Reward)))
-						require.NoError(t, simApp.OnomyApp().BankKeeper.SendCoinsFromModuleToModule(ctx, types.ModuleName, distrtypes.ModuleName, sdk.NewCoins(tt.args.vals[moniker].Reward)))
+						require.NoError(t, simApp.EnigmaApp().BankKeeper.MintCoins(ctx, types.ModuleName, sdk.NewCoins(tt.args.vals[moniker].Reward)))
+						require.NoError(t, simApp.EnigmaApp().BankKeeper.SendCoinsFromModuleToModule(ctx, types.ModuleName, distrtypes.ModuleName, sdk.NewCoins(tt.args.vals[moniker].Reward)))
 
-						simApp.OnomyApp().DistrKeeper.AllocateTokensToValidator(ctx, validator, sdk.NewDecCoinsFromCoins(tt.args.vals[moniker].Reward))
+						simApp.EnigmaApp().DistrKeeper.AllocateTokensToValidator(ctx, validator, sdk.NewDecCoinsFromCoins(tt.args.vals[moniker].Reward))
 						return true
 					}
 					return false
@@ -337,7 +337,7 @@ func TestEndBlocker_WithdrawReward(t *testing.T) {
 			// assertions
 			simApp.BeginNextBlock()
 			ctx = simApp.NewNextContext()
-			dao.EndBlocker(ctx, simApp.OnomyApp().DaoKeeper)
+			dao.EndBlocker(ctx, simApp.EnigmaApp().DaoKeeper)
 			assertValidators(t, simApp, ctx, tt.want.vals)
 
 			gotTreasuryBalance := daoKeeper.Treasury(ctx)
@@ -452,11 +452,11 @@ func TestEndBlocker_Vote(t *testing.T) {
 
 			simApp.BeginNextBlock()
 			ctx := simApp.NewContext()
-			dao.EndBlocker(ctx, simApp.OnomyApp().DaoKeeper)
+			dao.EndBlocker(ctx, simApp.EnigmaApp().DaoKeeper)
 
 			// assertions
-			govKeeper := simApp.OnomyApp().GovKeeper
-			accountKeeper := simApp.OnomyApp().AccountKeeper
+			govKeeper := simApp.EnigmaApp().GovKeeper
+			accountKeeper := simApp.EnigmaApp().AccountKeeper
 			daoAddress := accountKeeper.GetModuleAddress(types.ModuleName)
 
 			votes := govKeeper.GetAllVotes(ctx)
@@ -572,12 +572,12 @@ func TestEndBlocker_Slashing_Protection(t *testing.T) {
 				if !tt.args.vals[moniker].shouldSlash {
 					continue
 				}
-				for _, val := range simApp.OnomyApp().StakingKeeper.GetAllValidators(ctx) {
+				for _, val := range simApp.EnigmaApp().StakingKeeper.GetAllValidators(ctx) {
 					if val.GetMoniker() == moniker {
-						power := simApp.OnomyApp().StakingKeeper.GetLastValidatorPower(ctx, val.GetOperator())
+						power := simApp.EnigmaApp().StakingKeeper.GetLastValidatorPower(ctx, val.GetOperator())
 						consAddr, err := val.GetConsAddr()
 						require.NoError(t, err)
-						simApp.OnomyApp().StakingKeeper.Slash(ctx, consAddr, ctx.BlockHeight(), power, fraction)
+						simApp.EnigmaApp().StakingKeeper.Slash(ctx, consAddr, ctx.BlockHeight(), power, fraction)
 					}
 				}
 			}
@@ -591,7 +591,7 @@ func TestEndBlocker_Slashing_Protection(t *testing.T) {
 			// assertions
 			assertValidators(t, simApp, ctx, tt.want.vals)
 
-			daoKeeper := simApp.OnomyApp().DaoKeeper
+			daoKeeper := simApp.EnigmaApp().DaoKeeper
 			gotTreasuryBalance := daoKeeper.Treasury(ctx)
 			require.Equal(t, sdk.NewCoins(tt.want.treasuryBalance), gotTreasuryBalance)
 
@@ -633,13 +633,13 @@ func allocateValidatorsReward(t *testing.T, simApp *simapp.SimApp, vals map[stri
 		// allocate the reward
 		simApp.BeginNextBlock()
 		ctx := simApp.NewNextContext()
-		simApp.OnomyApp().StakingKeeper.IterateValidators(ctx, func(index int64, validator stakingtypes.ValidatorI) (stop bool) {
+		simApp.EnigmaApp().StakingKeeper.IterateValidators(ctx, func(index int64, validator stakingtypes.ValidatorI) (stop bool) {
 			if moniker == validator.GetMoniker() {
 				// mind and send coins as a validator Reward
-				require.NoError(t, simApp.OnomyApp().BankKeeper.MintCoins(ctx, types.ModuleName, sdk.NewCoins(vals[moniker].Reward)))
-				require.NoError(t, simApp.OnomyApp().BankKeeper.SendCoinsFromModuleToModule(ctx, types.ModuleName, distrtypes.ModuleName, sdk.NewCoins(vals[moniker].Reward)))
+				require.NoError(t, simApp.EnigmaApp().BankKeeper.MintCoins(ctx, types.ModuleName, sdk.NewCoins(vals[moniker].Reward)))
+				require.NoError(t, simApp.EnigmaApp().BankKeeper.SendCoinsFromModuleToModule(ctx, types.ModuleName, distrtypes.ModuleName, sdk.NewCoins(vals[moniker].Reward)))
 
-				simApp.OnomyApp().DistrKeeper.AllocateTokensToValidator(ctx, validator, sdk.NewDecCoinsFromCoins(vals[moniker].Reward))
+				simApp.EnigmaApp().DistrKeeper.AllocateTokensToValidator(ctx, validator, sdk.NewDecCoinsFromCoins(vals[moniker].Reward))
 				allocated = true
 				return true
 			}
@@ -654,8 +654,8 @@ func allocateValidatorsReward(t *testing.T, simApp *simapp.SimApp, vals map[stri
 func assertValidators(t *testing.T, simApp *simapp.SimApp, ctx sdk.Context, vals map[string]valAssertion) {
 	t.Helper()
 
-	accountKeeper := simApp.OnomyApp().AccountKeeper
-	stakingKeeper := simApp.OnomyApp().StakingKeeper
+	accountKeeper := simApp.EnigmaApp().AccountKeeper
+	stakingKeeper := simApp.EnigmaApp().StakingKeeper
 	daoAddress := accountKeeper.GetModuleAddress(types.ModuleName)
 	updatedValidators := stakingKeeper.GetAllValidators(ctx)
 	require.Equal(t, len(vals), len(updatedValidators))

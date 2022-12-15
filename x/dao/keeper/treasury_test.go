@@ -7,8 +7,8 @@ import (
 	"github.com/stretchr/testify/require"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/onomyprotocol/onomy/testutil/simapp"
-	"github.com/onomyprotocol/onomy/x/dao/types"
+	"github.com/furyunderverse/enigma/testutil/simapp"
+	"github.com/furyunderverse/enigma/x/dao/types"
 )
 
 func TestKeeper_Treasury(t *testing.T) {
@@ -38,15 +38,15 @@ func TestKeeper_Treasury(t *testing.T) {
 		tt := tt
 		t.Run(tt.name, func(t *testing.T) {
 			simApp := simapp.Setup()
-			ctx := simApp.OnomyApp().BaseApp.NewContext(false, tmproto.Header{})
+			ctx := simApp.EnigmaApp().BaseApp.NewContext(false, tmproto.Header{})
 
-			err := simApp.OnomyApp().DaoKeeper.InitGenesis(ctx, types.GenesisState{
+			err := simApp.EnigmaApp().DaoKeeper.InitGenesis(ctx, types.GenesisState{
 				Params:          types.DefaultParams(),
 				TreasuryBalance: tt.args.treasuryBalance,
 			})
 			require.NoError(t, err)
 
-			got := simApp.OnomyApp().DaoKeeper.Treasury(ctx)
+			got := simApp.EnigmaApp().DaoKeeper.Treasury(ctx)
 			require.Equal(t, tt.want, got)
 		})
 	}

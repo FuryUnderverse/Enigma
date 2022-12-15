@@ -12,10 +12,10 @@ import (
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/onomy/testutil/network"
-	"github.com/onomyprotocol/onomy/testutil/simapp"
-	"github.com/onomyprotocol/onomy/x/dao/client/cli"
-	"github.com/onomyprotocol/onomy/x/dao/types"
+	"github.com/furyunderverse/enigma/testutil/network"
+	"github.com/furyunderverse/enigma/testutil/simapp"
+	"github.com/furyunderverse/enigma/x/dao/client/cli"
+	"github.com/furyunderverse/enigma/x/dao/types"
 )
 
 const (
@@ -47,7 +47,7 @@ func TestCLI_FundTreasuryProposal(t *testing.T) {
 			args := strings.Split(tt.args, " ")
 			args = append(args, testNetwork.TxValidator1Args()...)
 			ctx := testNetwork.Validator1Ctx()
-			// on the onomy chain those flag will be added ny the gov module
+			// on the enigma chain those flag will be added ny the gov module
 			cmd := cli.CmdFundTreasuryProposal()
 			flags.AddTxFlagsToCmd(cmd)
 			out, err := clitestutil.ExecTestCLICmd(ctx, cmd, args)
@@ -99,7 +99,7 @@ func TestCLI_ExchangeWithTreasuryProposal(t *testing.T) {
 			args := strings.Split(tt.args, " ")
 			args = append(args, testNetwork.TxValidator1Args()...)
 			ctx := testNetwork.Validator1Ctx()
-			// on the onomy chain those flag will be added ny the gov module
+			// on the enigma chain those flag will be added ny the gov module
 			cmd := cli.CmdExchangeWithTreasuryProposal()
 			flags.AddTxFlagsToCmd(cmd)
 			out, err := clitestutil.ExecTestCLICmd(ctx, cmd, args)
@@ -152,7 +152,7 @@ func TestCLI_FundAccountProposal(t *testing.T) {
 			args := strings.Split(tt.args, " ")
 			args = append(args, testNetwork.TxValidator1Args()...)
 			ctx := testNetwork.Validator1Ctx()
-			// on the onomy chain those flag will be added ny the gov module
+			// on the enigma chain those flag will be added ny the gov module
 			cmd := cli.CmdFundAccountProposal()
 			flags.AddTxFlagsToCmd(cmd)
 			out, err := clitestutil.ExecTestCLICmd(ctx, cmd, args)

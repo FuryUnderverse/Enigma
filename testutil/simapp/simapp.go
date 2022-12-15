@@ -27,12 +27,12 @@ import (
 	dbm "github.com/tendermint/tm-db"
 
 	gravitytypes "github.com/onomyprotocol/cosmos-gravity-bridge/module/x/gravity/types"
-	"github.com/onomyprotocol/onomy/app"
+	"github.com/furyunderverse/enigma/app"
 )
 
-// The SimApp is OnomyApp wrapper with the advance testing capabilities.
+// The SimApp is EnigmaApp wrapper with the advance testing capabilities.
 type SimApp struct {
-	onomyApp *app.OnomyApp
+	enigmaApp *app.EnigmaApp
 }
 
 // GenesisState of the blockchain is represented here as a map of raw json
@@ -72,13 +72,13 @@ func WithGenesisAccountsAndBalances(balances ...banktypes.Balance) Option {
 			}
 
 			authGenesis := authtypes.NewGenesisState(authtypes.DefaultParams(), accounts)
-			genState[authtypes.ModuleName] = simApp.onomyApp.AppCodec().MustMarshalJSON(authGenesis)
+			genState[authtypes.ModuleName] = simApp.enigmaApp.AppCodec().MustMarshalJSON(authGenesis)
 
 			s := totalSupply.String()
 			_ = s
 
 			bankGenesis := banktypes.NewGenesisState(banktypes.DefaultGenesisState().Params, balances, totalSupply, []banktypes.Metadata{})
-			genState[banktypes.ModuleName] = simApp.onomyApp.AppCodec().MustMarshalJSON(bankGenesis)
+			genState[banktypes.ModuleName] = simApp.enigmaApp.AppCodec().MustMarshalJSON(bankGenesis)
 
 			return simApp, genState
 		},
@@ -99,7 +99,7 @@ func WithGenesisOverride(override func(map[string]json.RawMessage) map[string]js
 func WithAppCommit() Option {
 	return Option{
 		after: func(simApp *SimApp) *SimApp {
-			simApp.onomyApp.Commit()
+			simApp.enigmaApp.Commit()
 			return simApp
 		},
 	}
@@ -145,10 +145,10 @@ func SetupWithValidators(t *testing.T, vals map[string]ValReq, opts ...Option) (
 
 // Setup initializes a new SimApp. A Nop logger is set in SimApp.
 func Setup(opts ...Option) *SimApp {
-	onomyApp, genesisState := setup(5) // nolint:gomnd //test constant
+	enigmaApp, genesisState := setup(5) // nolint:gomnd //test constant
 
 	simApp := &SimApp{
-		onomyApp: onomyApp,
+		enigmaApp: enigmaApp,
 	}
 
 	for _, opt := range opts {
@@ -164,7 +164,7 @@ func Setup(opts ...Option) *SimApp {
 	}
 
 	// Initialize the chain
-	simApp.onomyApp.InitChain(
+	simApp.enigmaApp.InitChain(
 		abci.RequestInitChain{
 			Validators:      []abci.ValidatorUpdate{},
 			ConsensusParams: simapp.DefaultConsensusParams,
@@ -181,41 +181,41 @@ func Setup(opts ...Option) *SimApp {
 	return simApp
 }
 
-// OnomyApp returns OnomyApp from the SimApp.
-func (s *SimApp) OnomyApp() *app.OnomyApp {
-	return s.onomyApp
+// EnigmaApp returns EnigmaApp from the SimApp.
+func (s *SimApp) EnigmaApp() *app.EnigmaApp {
+	return s.enigmaApp
 }
 
 // BeginNextBlock begins new SimApp block.
 func (s *SimApp) BeginNextBlock() {
-	s.onomyApp.BeginBlock(abci.RequestBeginBlock{Header: tmproto.Header{Height: s.onomyApp.LastBlockHeight() + 1}})
+	s.enigmaApp.BeginBlock(abci.RequestBeginBlock{Header: tmproto.Header{Height: s.enigmaApp.LastBlockHeight() + 1}})
 }
 
 // EndBlockAndCommit ends the current block and commit the state.
 func (s *SimApp) EndBlockAndCommit(ctx sdk.Context) {
-	s.onomyApp.EndBlocker(ctx, abci.RequestEndBlock{Height: ctx.BlockHeight()})
-	s.onomyApp.Commit()
+	s.enigmaApp.EndBlocker(ctx, abci.RequestEndBlock{Height: ctx.BlockHeight()})
+	s.enigmaApp.Commit()
 }
 
 // EndBlock ends the current block.
 func (s *SimApp) EndBlock(ctx sdk.Context) {
-	s.onomyApp.EndBlocker(ctx, abci.RequestEndBlock{Height: ctx.BlockHeight()})
+	s.enigmaApp.EndBlocker(ctx, abci.RequestEndBlock{Height: ctx.BlockHeight()})
 }
 
 // NewContext returns empty sdk context for the SimApp.
 func (s *SimApp) NewContext() sdk.Context {
-	return s.onomyApp.BaseApp.NewContext(true, tmproto.Header{})
+	return s.enigmaApp.BaseApp.NewContext(true, tmproto.Header{})
 }
 
 // CurrentContext returns current context for the SimApp.
 func (s *SimApp) CurrentContext() sdk.Context {
-	return s.onomyApp.BaseApp.NewContext(true, tmproto.Header{Height: s.onomyApp.LastBlockHeight()})
+	return s.enigmaApp.BaseApp.NewContext(true, tmproto.Header{Height: s.enigmaApp.LastBlockHeight()})
 }
 
 // NewNextContext creates next block sdk context for the SimApp.
 func (s *SimApp) NewNextContext() sdk.Context {
-	header := tmproto.Header{Height: s.onomyApp.LastBlockHeight() + 1}
-	return s.onomyApp.BaseApp.NewContext(false, header)
+	header := tmproto.Header{Height: s.enigmaApp.LastBlockHeight() + 1}
+	return s.enigmaApp.BaseApp.NewContext(false, header)
 }
 
 // CreateValidator creates the validator.
@@ -292,22 +292,22 @@ func (s *SimApp) sendTx(t *testing.T, priv cryptotypes.PrivKey, messages ...sdk.
 	t.Helper()
 
 	address := sdk.AccAddress(priv.PubKey().Address())
-	account := s.onomyApp.AccountKeeper.GetAccount(s.NewContext(), address)
+	account := s.enigmaApp.AccountKeeper.GetAccount(s.NewContext(), address)
 	accountNum := account.GetAccountNumber()
 	accountSeq := account.GetSequence()
 
-	header := tmproto.Header{Height: s.onomyApp.LastBlockHeight() + 1}
+	header := tmproto.Header{Height: s.enigmaApp.LastBlockHeight() + 1}
 	txGen := cosmoscmd.MakeEncodingConfig(app.ModuleBasics).TxConfig
 
-	_, _, err := signCheckDeliver(t, txGen, s.onomyApp.BaseApp, header, messages, "", []uint64{accountNum}, []uint64{accountSeq}, true, true, priv)
+	_, _, err := signCheckDeliver(t, txGen, s.enigmaApp.BaseApp, header, messages, "", []uint64{accountNum}, []uint64{accountSeq}, true, true, priv)
 	require.NoError(t, err)
 }
 
-func setup(invCheckPeriod uint) (*app.OnomyApp, GenesisState) {
+func setup(invCheckPeriod uint) (*app.EnigmaApp, GenesisState) {
 	db := dbm.NewMemDB()
 	encCdc := cosmoscmd.MakeEncodingConfig(app.ModuleBasics)
 	simApp := app.New(log.NewNopLogger(), db, nil, true, map[int64]bool{}, app.DefaultNodeHome, invCheckPeriod, encCdc, simapp.EmptyAppOptions{})
-	return simApp.(*app.OnomyApp), NewDefaultGenesisState(encCdc.Marshaler)
+	return simApp.(*app.EnigmaApp), NewDefaultGenesisState(encCdc.Marshaler)
 }
 
 func signCheckDeliver(

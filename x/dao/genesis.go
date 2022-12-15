@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/onomyprotocol/onomy/x/dao/keeper"
-	"github.com/onomyprotocol/onomy/x/dao/types"
+	"github.com/furyunderverse/enigma/x/dao/keeper"
+	"github.com/furyunderverse/enigma/x/dao/types"
 )
 
 // InitGenesis initializes the dao module's state from a provided genesis

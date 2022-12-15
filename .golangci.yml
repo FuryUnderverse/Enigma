@@ -122,7 +122,7 @@ linters-settings:
     # put imports beginning with prefix after 3rd-party packages;
     # only support one prefix
     # if not set, use goimports.local-prefixes
-    local-prefixes: github.com/onomyprotocol
+    local-prefixes: github.com/furyunderverse
 
   gocognit:
     # minimal code complexity to report, 30 by default (but we recommend 10-20)
@@ -230,7 +230,7 @@ linters-settings:
   goimports:
     # put imports beginning with prefix after 3rd-party packages;
     # it's a comma-separated list of prefixes
-    local-prefixes: github.com/onomyprotocol
+    local-prefixes: github.com/furyunderverse
 
   golint:
     # minimal confidence for issues, default is 0.8

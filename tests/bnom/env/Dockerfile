@@ -1,4 +1,4 @@
-FROM onomy/dev-base:latest
+FROM enigma/dev-base:latest
 
 # ------------------ gravity bridge/deployer ------------------
 

@@ -4,38 +4,38 @@
 
 ## Table of Contents
 
-- [onomyprotocol/dao/v1/dao.proto](#onomyprotocol/dao/v1/dao.proto)
-    - [CoinsExchangePair](#onomyprotocol.dao.v1.CoinsExchangePair)
-    - [ExchangeWithTreasuryProposal](#onomyprotocol.dao.v1.ExchangeWithTreasuryProposal)
-    - [FundAccountProposal](#onomyprotocol.dao.v1.FundAccountProposal)
-    - [FundTreasuryProposal](#onomyprotocol.dao.v1.FundTreasuryProposal)
+- [enigma/dao/v1/dao.proto](#enigma/dao/v1/dao.proto)
+    - [CoinsExchangePair](#enigma.dao.v1.CoinsExchangePair)
+    - [ExchangeWithTreasuryProposal](#enigma.dao.v1.ExchangeWithTreasuryProposal)
+    - [FundAccountProposal](#enigma.dao.v1.FundAccountProposal)
+    - [FundTreasuryProposal](#enigma.dao.v1.FundTreasuryProposal)
   
-- [onomyprotocol/dao/v1/params.proto](#onomyprotocol/dao/v1/params.proto)
-    - [Params](#onomyprotocol.dao.v1.Params)
+- [enigma/dao/v1/params.proto](#enigma/dao/v1/params.proto)
+    - [Params](#enigma.dao.v1.Params)
   
-- [onomyprotocol/dao/v1/genesis.proto](#onomyprotocol/dao/v1/genesis.proto)
-    - [GenesisState](#onomyprotocol.dao.v1.GenesisState)
+- [enigma/dao/v1/genesis.proto](#enigma/dao/v1/genesis.proto)
+    - [GenesisState](#enigma.dao.v1.GenesisState)
   
-- [onomyprotocol/dao/v1/query.proto](#onomyprotocol/dao/v1/query.proto)
-    - [QueryParamsRequest](#onomyprotocol.dao.v1.QueryParamsRequest)
-    - [QueryParamsResponse](#onomyprotocol.dao.v1.QueryParamsResponse)
-    - [QueryTreasuryRequest](#onomyprotocol.dao.v1.QueryTreasuryRequest)
-    - [QueryTreasuryResponse](#onomyprotocol.dao.v1.QueryTreasuryResponse)
+- [enigma/dao/v1/query.proto](#enigma/dao/v1/query.proto)
+    - [QueryParamsRequest](#enigma.dao.v1.QueryParamsRequest)
+    - [QueryParamsResponse](#enigma.dao.v1.QueryParamsResponse)
+    - [QueryTreasuryRequest](#enigma.dao.v1.QueryTreasuryRequest)
+    - [QueryTreasuryResponse](#enigma.dao.v1.QueryTreasuryResponse)
   
-    - [Query](#onomyprotocol.dao.v1.Query)
+    - [Query](#enigma.dao.v1.Query)
   
 - [Scalar Value Types](#scalar-value-types)
 
 
 
-<a name="onomyprotocol/dao/v1/dao.proto"></a>
+<a name="enigma/dao/v1/dao.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## onomyprotocol/dao/v1/dao.proto
+## enigma/dao/v1/dao.proto
 
 
 
-<a name="onomyprotocol.dao.v1.CoinsExchangePair"></a>
+<a name="enigma.dao.v1.CoinsExchangePair"></a>
 
 ### CoinsExchangePair
 CoinsExchangePair is an ask/bid coins pair to exchange.
@@ -51,7 +51,7 @@ CoinsExchangePair is an ask/bid coins pair to exchange.
 
 
 
-<a name="onomyprotocol.dao.v1.ExchangeWithTreasuryProposal"></a>
+<a name="enigma.dao.v1.ExchangeWithTreasuryProposal"></a>
 
 ### ExchangeWithTreasuryProposal
 ExchangeWithTreasuryProposal details a dao exchange with treasury proposal.
@@ -62,14 +62,14 @@ ExchangeWithTreasuryProposal details a dao exchange with treasury proposal.
 | `sender` | [string](#string) |  |  |
 | `title` | [string](#string) |  |  |
 | `description` | [string](#string) |  |  |
-| `coins_pairs` | [CoinsExchangePair](#onomyprotocol.dao.v1.CoinsExchangePair) | repeated |  |
+| `coins_pairs` | [CoinsExchangePair](#enigma.dao.v1.CoinsExchangePair) | repeated |  |
 
 
 
 
 
 
-<a name="onomyprotocol.dao.v1.FundAccountProposal"></a>
+<a name="enigma.dao.v1.FundAccountProposal"></a>
 
 ### FundAccountProposal
 FundAccountProposal details a dao fund account proposal.
@@ -87,7 +87,7 @@ FundAccountProposal details a dao fund account proposal.
 
 
 
-<a name="onomyprotocol.dao.v1.FundTreasuryProposal"></a>
+<a name="enigma.dao.v1.FundTreasuryProposal"></a>
 
 ### FundTreasuryProposal
 FundTreasuryProposal details a dao fund treasury proposal.
@@ -114,14 +114,14 @@ FundTreasuryProposal details a dao fund treasury proposal.
 
 
 
-<a name="onomyprotocol/dao/v1/params.proto"></a>
+<a name="enigma/dao/v1/params.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## onomyprotocol/dao/v1/params.proto
+## enigma/dao/v1/params.proto
 
 
 
-<a name="onomyprotocol.dao.v1.Params"></a>
+<a name="enigma.dao.v1.Params"></a>
 
 ### Params
 Params defines the parameters for the module.
@@ -148,14 +148,14 @@ Params defines the parameters for the module.
 
 
 
-<a name="onomyprotocol/dao/v1/genesis.proto"></a>
+<a name="enigma/dao/v1/genesis.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## onomyprotocol/dao/v1/genesis.proto
+## enigma/dao/v1/genesis.proto
 
 
 
-<a name="onomyprotocol.dao.v1.GenesisState"></a>
+<a name="enigma.dao.v1.GenesisState"></a>
 
 ### GenesisState
 GenesisState defines the dao module's genesis state.
@@ -163,7 +163,7 @@ GenesisState defines the dao module's genesis state.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#onomyprotocol.dao.v1.Params) |  | the dao module managed params |
+| `params` | [Params](#enigma.dao.v1.Params) |  | the dao module managed params |
 | `treasury_balance` | [cosmos.base.v1beta1.Coin](#cosmos.base.v1beta1.Coin) | repeated | the list of dao module coins |
 
 
@@ -180,14 +180,14 @@ GenesisState defines the dao module's genesis state.
 
 
 
-<a name="onomyprotocol/dao/v1/query.proto"></a>
+<a name="enigma/dao/v1/query.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## onomyprotocol/dao/v1/query.proto
+## enigma/dao/v1/query.proto
 
 
 
-<a name="onomyprotocol.dao.v1.QueryParamsRequest"></a>
+<a name="enigma.dao.v1.QueryParamsRequest"></a>
 
 ### QueryParamsRequest
 QueryParamsRequest is request type for the Query/Params RPC method.
@@ -197,7 +197,7 @@ QueryParamsRequest is request type for the Query/Params RPC method.
 
 
 
-<a name="onomyprotocol.dao.v1.QueryParamsResponse"></a>
+<a name="enigma.dao.v1.QueryParamsResponse"></a>
 
 ### QueryParamsResponse
 QueryParamsResponse is response type for the Query/Params RPC method.
@@ -205,14 +205,14 @@ QueryParamsResponse is response type for the Query/Params RPC method.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#onomyprotocol.dao.v1.Params) |  | params holds all the parameters of this module. |
+| `params` | [Params](#enigma.dao.v1.Params) |  | params holds all the parameters of this module. |
 
 
 
 
 
 
-<a name="onomyprotocol.dao.v1.QueryTreasuryRequest"></a>
+<a name="enigma.dao.v1.QueryTreasuryRequest"></a>
 
 ### QueryTreasuryRequest
 QueryTreasuryRequest is request type for the Query/Treasury RPC method.
@@ -222,7 +222,7 @@ QueryTreasuryRequest is request type for the Query/Treasury RPC method.
 
 
 
-<a name="onomyprotocol.dao.v1.QueryTreasuryResponse"></a>
+<a name="enigma.dao.v1.QueryTreasuryResponse"></a>
 
 ### QueryTreasuryResponse
 QueryTreasuryResponse is response type for the Query/Treasury RPC method.
@@ -243,15 +243,15 @@ QueryTreasuryResponse is response type for the Query/Treasury RPC method.
  <!-- end HasExtensions -->
 
 
-<a name="onomyprotocol.dao.v1.Query"></a>
+<a name="enigma.dao.v1.Query"></a>
 
 ### Query
 Query defines the gRPC querier service.
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `Params` | [QueryParamsRequest](#onomyprotocol.dao.v1.QueryParamsRequest) | [QueryParamsResponse](#onomyprotocol.dao.v1.QueryParamsResponse) | Parameters queries the parameters of the module. | GET|/onomyprotocol/dao/v1/params|
-| `Treasury` | [QueryTreasuryRequest](#onomyprotocol.dao.v1.QueryTreasuryRequest) | [QueryTreasuryResponse](#onomyprotocol.dao.v1.QueryTreasuryResponse) | Treasury queries the dao treasury. | GET|/onomyprotocol/dao/v1/treasury|
+| `Params` | [QueryParamsRequest](#enigma.dao.v1.QueryParamsRequest) | [QueryParamsResponse](#enigma.dao.v1.QueryParamsResponse) | Parameters queries the parameters of the module. | GET|/enigma/dao/v1/params|
+| `Treasury` | [QueryTreasuryRequest](#enigma.dao.v1.QueryTreasuryRequest) | [QueryTreasuryResponse](#enigma.dao.v1.QueryTreasuryResponse) | Treasury queries the dao treasury. | GET|/enigma/dao/v1/treasury|
 
  <!-- end services -->
 

@@ -3,13 +3,13 @@ set -eu
 
 echo "Enable the node's monitoring"
 
-# Onomy home dir
-ONOMY_HOME=$HOME/.onomy
-# Config directories for onomy node
-ONOMY_HOME_CONFIG="$ONOMY_HOME/config"
-# Config file for onomy node
-ONOMY_NODE_CONFIG="$ONOMY_HOME_CONFIG/config.toml"
+# Enigma home dir
+ENIGMA_HOME=$HOME/.enigma
+# Config directories for enigma node
+ENIGMA_HOME_CONFIG="$ENIGMA_HOME/config"
+# Config file for enigma node
+ENIGMA_NODE_CONFIG="$ENIGMA_HOME_CONFIG/config.toml"
 
-crudini --set $ONOMY_NODE_CONFIG instrumentation prometheus true
+crudini --set $ENIGMA_NODE_CONFIG instrumentation prometheus true
 
 echo "The prometheus is enabled"

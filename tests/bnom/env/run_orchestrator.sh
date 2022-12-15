@@ -1,25 +1,25 @@
 #!/bin/bash
 set -eu
 
-# The address to run onomy node
+# The address to run enigma node
 # The node is running on the host machine be the call to it we expect from the container.
 # The hist to make the test pass on mac and linux
-ONOMY_HOST="host.docker.internal"
-if ! ping -c 1 $ONOMY_HOST &> /dev/null
+ENIGMA_HOST="host.docker.internal"
+if ! ping -c 1 $ENIGMA_HOST &> /dev/null
 then
-  ONOMY_HOST="0.0.0.0"
+  ENIGMA_HOST="0.0.0.0"
 fi
 
-# The port of the onomy gRPC
-ONOMY_GRPC_PORT="9090"
+# The port of the enigma gRPC
+ENIGMA_GRPC_PORT="9090"
 
 # The prefix for cosmos addresses
-ONOMY_ADDRESS_PREFIX="onomy"
+ENIGMA_ADDRESS_PREFIX="enigma"
 
 # read the mnemonic from param.
-ONOMY_ORCHESTRATOR_MNEMONIC="$1"
+ENIGMA_ORCHESTRATOR_MNEMONIC="$1"
 
-# onomy stake denom
+# enigma stake denom
 STAKE_DENOM=anom
 
 # The URL of the running mock eth node.
@@ -33,10 +33,10 @@ GRAVITY_CONTRACT_ADDRESS=$(cat gravity_contract_address)
 
 echo "Starting orchestrator"
 
-gbt --address-prefix="$ONOMY_ADDRESS_PREFIX" orchestrator \
-             --cosmos-phrase="$ONOMY_ORCHESTRATOR_MNEMONIC" \
+gbt --address-prefix="$ENIGMA_ADDRESS_PREFIX" orchestrator \
+             --cosmos-phrase="$ENIGMA_ORCHESTRATOR_MNEMONIC" \
              --ethereum-key="$ETH_ORCHESTRATOR_PRIVATE_KEY" \
-             --cosmos-grpc="http://$ONOMY_HOST:$ONOMY_GRPC_PORT/" \
+             --cosmos-grpc="http://$ENIGMA_HOST:$ENIGMA_GRPC_PORT/" \
              --ethereum-rpc="$ETH_ADDRESS" \
              --fees="1$STAKE_DENOM" \
              --gravity-contract-address="$GRAVITY_CONTRACT_ADDRESS"

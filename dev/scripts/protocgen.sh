@@ -35,5 +35,5 @@ buf protoc \
 go mod tidy
 
 # move proto files to the right places
-cp -r github.com/onomyprotocol/onomy/* ./
+cp -r github.com/furyunderverse/enigma/* ./
 rm -rf github.com

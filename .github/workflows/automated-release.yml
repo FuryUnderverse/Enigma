@@ -31,34 +31,34 @@ jobs:
           draft: false
           prerelease: true
 
-      # build & upload onomyd
+      # build & upload enigmad
 
-      - name: Build onomyd
+      - name: Build enigmad
         run: make build
 
-      - name: Upload onomyd
-        id: upload-onomyd-release-asset
+      - name: Upload enigmad
+        id: upload-enigmad-release-asset
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: onomyd
-          asset_name: onomyd
+          asset_path: enigmad
+          asset_name: enigmad
           asset_content_type: application/bin
 
-      # build & upload onomyd arm64
+      # build & upload enigmad arm64
 
-      - name: Build onomyd arm64
+      - name: Build enigmad arm64
         run: GOARCH=arm64 make build
 
-      - name: Upload onomyd arm64
-        id: upload-onomyd-release-asset-arm
+      - name: Upload enigmad arm64
+        id: upload-enigmad-release-asset-arm
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: onomyd
-          asset_name: onomyd-arm
+          asset_path: enigmad
+          asset_name: enigmad-arm
           asset_content_type: application/bin

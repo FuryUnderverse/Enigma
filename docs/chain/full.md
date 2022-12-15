@@ -1,6 +1,6 @@
 # Steps to run the full node
 
-# How to Run an Onomy Full Node
+# How to Run an Enigma Full Node
 
 As a Cosmos-based chain, the ONET full nodes are similar to any Cosmos full nodes. Unlike the validator flow, running a
 full node requires no external software.
@@ -49,23 +49,23 @@ System requirements:
   Before running the script please set up "ulimit > 65535" ([Red Hat Enterprise Linux](set-ulimit-rhel8.md))
 
   ```
-  ./start-cosmovisor-onomyd.sh &>> $HOME/.onomy/logs/onomyd.log &
+  ./start-cosmovisor-enigmad.sh &>> $HOME/.enigma/logs/enigmad.log &
   ```
 
   Or If you want to run the node without cosmovisor:
 
   ```
-  ./start-onomyd.sh &>> $HOME/.onomy/logs/onomyd.log &
+  ./start-enigmad.sh &>> $HOME/.enigma/logs/enigmad.log &
   ```
 
   Or add and start as a service (strongly recommended). You need to run it from the **sudo** user.
 
   ```
-  ./add-service.sh cosmovisor-onomyd ${PWD}/start-cosmovisor-onomyd.sh
+  ./add-service.sh cosmovisor-enigmad ${PWD}/start-cosmovisor-enigmad.sh
   ```
 
   Or If you want to run the node without cosmovisor:
 
   ```
-  ./add-service.sh onomyd ${PWD}/start-onomyd.sh
+  ./add-service.sh enigmad ${PWD}/start-enigmad.sh
   ```

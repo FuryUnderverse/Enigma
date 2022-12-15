@@ -2,7 +2,7 @@
 set -eu
 
 # The prefix for cosmos addresses
-ONOMY_ADDRESS_PREFIX="onomy"
+ENIGMA_ADDRESS_PREFIX="enigma"
 
 # The URL of the running mock eth node.
 ETH_ADDRESS="http://0.0.0.0:8545/"
@@ -17,7 +17,7 @@ ERC20_TOKEN_ADDRESS="$1"
 ERC20_TOKEN_AMOUNT="$2"
 COSMOS_DESTINATION_ADDRESS="$3"
 
-gbt -a "$ONOMY_ADDRESS_PREFIX" client eth-to-cosmos \
+gbt -a "$ENIGMA_ADDRESS_PREFIX" client eth-to-cosmos \
         --ethereum-key "$ETH_ORCHESTRATOR_PRIVATE_KEY" \
         --ethereum-rpc="$ETH_ADDRESS" \
         --gravity-contract-address "$GRAVITY_CONTRACT_ADDRESS" \

@@ -6,9 +6,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/onomy/testutil/simapp"
-	"github.com/onomyprotocol/onomy/x/dao"
-	"github.com/onomyprotocol/onomy/x/dao/types"
+	"github.com/furyunderverse/enigma/testutil/simapp"
+	"github.com/furyunderverse/enigma/x/dao"
+	"github.com/furyunderverse/enigma/x/dao/types"
 )
 
 func TestInitGenesis(t *testing.T) {
@@ -39,10 +39,10 @@ func TestInitGenesis(t *testing.T) {
 		simApp := simapp.Setup()
 		ctx := simApp.NewContext()
 		t.Run(tt.name, func(t *testing.T) {
-			dao.InitGenesis(ctx, simApp.OnomyApp().DaoKeeper, tt.args.genState)
-			exportedModuleBalance := simApp.OnomyApp().BankKeeper.GetAllBalances(ctx, simApp.OnomyApp().AccountKeeper.GetModuleAddress(types.ModuleName))
+			dao.InitGenesis(ctx, simApp.EnigmaApp().DaoKeeper, tt.args.genState)
+			exportedModuleBalance := simApp.EnigmaApp().BankKeeper.GetAllBalances(ctx, simApp.EnigmaApp().AccountKeeper.GetModuleAddress(types.ModuleName))
 			require.Equal(t, tt.args.genState.TreasuryBalance, exportedModuleBalance)
-			require.Equal(t, tt.args.genState.Params, simApp.OnomyApp().DaoKeeper.GetParams(ctx))
+			require.Equal(t, tt.args.genState.Params, simApp.EnigmaApp().DaoKeeper.GetParams(ctx))
 		})
 	}
 }
@@ -75,8 +75,8 @@ func TestInitAndExportGenesis(t *testing.T) {
 		simApp := simapp.Setup()
 		ctx := simApp.NewContext()
 		t.Run(tt.name, func(t *testing.T) {
-			dao.InitGenesis(ctx, simApp.OnomyApp().DaoKeeper, tt.args.genState)
-			exportedGenesis := dao.ExportGenesis(ctx, simApp.OnomyApp().DaoKeeper)
+			dao.InitGenesis(ctx, simApp.EnigmaApp().DaoKeeper, tt.args.genState)
+			exportedGenesis := dao.ExportGenesis(ctx, simApp.EnigmaApp().DaoKeeper)
 			require.Equal(t, &tt.args.genState, exportedGenesis)
 		})
 	}

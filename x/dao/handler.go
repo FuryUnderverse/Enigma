@@ -7,8 +7,8 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 
-	"github.com/onomyprotocol/onomy/x/dao/keeper"
-	"github.com/onomyprotocol/onomy/x/dao/types"
+	"github.com/furyunderverse/enigma/x/dao/keeper"
+	"github.com/furyunderverse/enigma/x/dao/types"
 )
 
 // NewHandler ...

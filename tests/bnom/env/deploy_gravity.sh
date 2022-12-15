@@ -1,17 +1,17 @@
 #!/bin/bash
 set -eu
 
-# The address to run onomy node
+# The address to run enigma node
 # The node is running on the host machine be the call to it we expect from the container.
 # The hist to make the test pass on mac and linux
-ONOMY_HOST="host.docker.internal"
+ENIGMA_HOST="host.docker.internal"
 ORIGINAL_DIR=$PWD
-if ! ping -c 1 $ONOMY_HOST &> /dev/null
+if ! ping -c 1 $ENIGMA_HOST &> /dev/null
 then
-  ONOMY_HOST="0.0.0.0"
+  ENIGMA_HOST="0.0.0.0"
 fi
 
-echo "ONOMY_HOST: $ONOMY_HOST"
+echo "ENIGMA_HOST: $ENIGMA_HOST"
 
 # The URL of the running mock eth node.
 ETH_ADDRESS="http://0.0.0.0:8545/"
@@ -24,7 +24,7 @@ ETH_ORCHESTRATOR_PRIVATE_KEY=c40f62e75a11789dbaf6ba82233ce8a52c20efb434281ae6977
 echo "Deploying Gravity contract"
 cd /root/home/gravity/solidity
 ./contract-deployer \
---cosmos-node="http://$ONOMY_HOST:26657" \
+--cosmos-node="http://$ENIGMA_HOST:26657" \
 --eth-node="$ETH_ADDRESS" \
 --eth-privkey="$ETH_ORCHESTRATOR_PRIVATE_KEY" \
 --contract=Gravity.json \

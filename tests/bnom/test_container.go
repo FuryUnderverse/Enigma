@@ -88,8 +88,8 @@ func (c *bnomTestsBaseContainer) startOrchestrator(ctx context.Context, mnemo st
 }
 
 // sendToCosmos send erc20 tokens from eth to cosmos.
-func (c *bnomTestsBaseContainer) sendToCosmos(ctx context.Context, erc20Contract string, amount int64, onomyDestinationAddress string) error {
-	return c.execBash(ctx, fmt.Sprintf("./send_to_cosmos.sh %s %d %s", erc20Contract, amount, onomyDestinationAddress))
+func (c *bnomTestsBaseContainer) sendToCosmos(ctx context.Context, erc20Contract string, amount int64, enigmaDestinationAddress string) error {
+	return c.execBash(ctx, fmt.Sprintf("./send_to_cosmos.sh %s %d %s", erc20Contract, amount, enigmaDestinationAddress))
 }
 
 func (c *bnomTestsBaseContainer) execBash(ctx context.Context, command string) error {

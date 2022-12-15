@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eux
-# your onomyd binary name
-BIN=onomyd
+# your enigmad binary name
+BIN=enigmad
 
 NODES=$1
 set +u
@@ -14,7 +14,7 @@ do
     # add this ip for loopback dialing
     ip addr add 7.7.7.$i/32 dev eth0 || true # allowed to fail
 
-    ONOMY_HOME="--home /validator$i"
+    ENIGMA_HOME="--home /validator$i"
     # this implicitly caps us at ~6000 nodes for this sim
     # note that we start on 26656 the idea here is that the first
     # node (node 1) is at the expected contact address from the gentx
@@ -38,7 +38,7 @@ do
     P2P_ADDRESS="--p2p.laddr tcp://7.7.7.$i:26656"
     LOG_LEVEL="--log_level info"
     INVARIANTS_CHECK="--inv-check-period 1"
-    ARGS="$ONOMY_HOME $LISTEN_ADDRESS $RPC_ADDRESS $GRPC_ADDRESS $GRPC_WEB_ADDRESS $LOG_LEVEL $INVARIANTS_CHECK $P2P_ADDRESS"
+    ARGS="$ENIGMA_HOME $LISTEN_ADDRESS $RPC_ADDRESS $GRPC_ADDRESS $GRPC_WEB_ADDRESS $LOG_LEVEL $INVARIANTS_CHECK $P2P_ADDRESS"
     $BIN $ARGS start &> /validator$i/logs &
 done
 
@@ -56,17 +56,17 @@ set +u
 # may be different. These two tests have different fork block heights they rely on
 if [[ $TEST_TYPE == *"ARBITRARY_LOGIC"* ]]; then
     export ALCHEMY_ID=$ALCHEMY_ID
-    pushd /onomy/tests/gravity/solidity
+    pushd /enigma/tests/gravity/solidity
     npm ci && npm run solidity_test_fork &
     popd
 elif [[ $TEST_TYPE == *"RELAY_MARKET"* ]]; then
     export ALCHEMY_ID=$ALCHEMY_ID
-    pushd /onomy/tests/gravity/solidity
+    pushd /enigma/tests/gravity/solidity
     npm ci && npm run evm_fork &
     popd
 # This starts a hardhat test environment with no pre-seeded state, faster to run, not accurate
 elif [[ ! -z "$HARDHAT" ]]; then
-    pushd /onomy/tests/gravity/solidity
+    pushd /enigma/tests/gravity/solidity
     npm ci && npm run evm &
     popd
 # This starts the Geth backed testnet with no pre-seeded in state.
@@ -76,6 +76,6 @@ elif [[ ! -z "$HARDHAT" ]]; then
 # the right number of cpu cores and Geth goes crazy consuming all the processing power, on the other hand
 # hardhat doesn't work for some tests that depend on transactions waiting for blocks, so Geth is the default
 else
-    bash /onomy/tests/gravity/container-scripts/run-eth.sh &
+    bash /enigma/tests/gravity/container-scripts/run-eth.sh &
 fi
 sleep 10

@@ -9,7 +9,7 @@ import (
 	govclient "github.com/cosmos/cosmos-sdk/x/gov/client"
 	govrest "github.com/cosmos/cosmos-sdk/x/gov/client/rest"
 
-	"github.com/onomyprotocol/onomy/x/dao/client/cli"
+	"github.com/furyunderverse/enigma/x/dao/client/cli"
 )
 
 var (

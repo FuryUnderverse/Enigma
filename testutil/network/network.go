@@ -17,8 +17,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/starport/starport/pkg/cosmoscmd"
 
-	"github.com/onomyprotocol/onomy/app"
-	"github.com/onomyprotocol/onomy/testutil/simapp"
+	"github.com/furyunderverse/enigma/app"
+	"github.com/furyunderverse/enigma/testutil/simapp"
 )
 
 type (
@@ -51,23 +51,23 @@ func New(t *testing.T, opts ...Option) *TestNetwork {
 	encCfg := cosmoscmd.MakeEncodingConfig(app.ModuleBasics)
 	cfg.GenesisState = app.ModuleBasics.DefaultGenesis(encCfg.Marshaler)
 	cfg.AppConstructor = func(val network.Validator) servertypes.Application {
-		onomyApp := simapp.Setup().OnomyApp()
+		enigmaApp := simapp.Setup().EnigmaApp()
 		// the override is required in order not to face the issue with the gravity end blocker validation
 		// because it requires the eth address to be linked with the validator account
-		onomyApp.SetOrderEndBlockers(crisistypes.ModuleName, govtypes.ModuleName, stakingtypes.ModuleName)
-		return onomyApp
+		enigmaApp.SetOrderEndBlockers(crisistypes.ModuleName, govtypes.ModuleName, stakingtypes.ModuleName)
+		return enigmaApp
 	}
 
 	for _, opt := range opts {
 		opt(&cfg)
 	}
 
-	onomyNetwork := network.New(t, cfg)
+	enigmaNetwork := network.New(t, cfg)
 
-	_, err := onomyNetwork.WaitForHeight(1)
+	_, err := enigmaNetwork.WaitForHeight(1)
 	require.NoError(t, err)
 
-	return &TestNetwork{onomyNetwork}
+	return &TestNetwork{enigmaNetwork}
 }
 
 // TxValidator1Args returns the tx params for the 1s network validator.

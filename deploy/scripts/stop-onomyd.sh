@@ -1,6 +1,6 @@
 #!/bin/bash
 set -eu
 
-echo "Stopping onomy node"
+echo "Stopping enigma node"
 
-pkill onomyd && echo "onomyd is stopped"
+pkill enigmad && echo "enigmad is stopped"

@@ -50,6 +50,6 @@ RUN mkdir -p /root/.cache/ && \
     ln -s /cache/golangci-lint/ /root/.cache/golangci-lint && \
     ln -s /cache/go-build/ /root/.cache/go-build
 
-WORKDIR /go/src/github.com/onomyprotocol/onomy
+WORKDIR /go/src/github.com/furyunderverse/enigma
 
 ENTRYPOINT ["bash", "/entrypoint.sh"]

@@ -16,9 +16,9 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/onomyprotocol/onomy/x/dao/client/cli"
-	"github.com/onomyprotocol/onomy/x/dao/keeper"
-	"github.com/onomyprotocol/onomy/x/dao/types"
+	"github.com/furyunderverse/enigma/x/dao/client/cli"
+	"github.com/furyunderverse/enigma/x/dao/keeper"
+	"github.com/furyunderverse/enigma/x/dao/types"
 )
 
 var (

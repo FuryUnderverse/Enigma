@@ -92,18 +92,18 @@ import (
 	"github.com/onomyprotocol/cosmos-gravity-bridge/module/x/gravity"
 	gravitykeeper "github.com/onomyprotocol/cosmos-gravity-bridge/module/x/gravity/keeper"
 	gravitytypes "github.com/onomyprotocol/cosmos-gravity-bridge/module/x/gravity/types"
-	"github.com/onomyprotocol/onomy/docs"
-	"github.com/onomyprotocol/onomy/x/dao"
-	daoclient "github.com/onomyprotocol/onomy/x/dao/client"
-	daokeeper "github.com/onomyprotocol/onomy/x/dao/keeper"
-	daotypes "github.com/onomyprotocol/onomy/x/dao/types"
+	"github.com/furyunderverse/enigma/docs"
+	"github.com/furyunderverse/enigma/x/dao"
+	daoclient "github.com/furyunderverse/enigma/x/dao/client"
+	daokeeper "github.com/furyunderverse/enigma/x/dao/keeper"
+	daotypes "github.com/furyunderverse/enigma/x/dao/types"
 )
 
 const (
 	// AccountAddressPrefix is cosmos-sdk accounts prefixes.
-	AccountAddressPrefix = "onomy"
-	// Name is the name of the onomy chain.
-	Name = "onomy"
+	AccountAddressPrefix = "enigma"
+	// Name is the name of the enigma chain.
+	Name = "enigma"
 )
 
 func getGovProposalHandlers() []govclient.ProposalHandler {
@@ -173,9 +173,9 @@ var (
 )
 
 var (
-	_ cosmoscmd.CosmosApp     = (*OnomyApp)(nil)
-	_ servertypes.Application = (*OnomyApp)(nil)
-	_ simapp.App              = (*OnomyApp)(nil)
+	_ cosmoscmd.CosmosApp     = (*EnigmaApp)(nil)
+	_ servertypes.Application = (*EnigmaApp)(nil)
+	_ simapp.App              = (*EnigmaApp)(nil)
 )
 
 func init() { // nolint: gochecknoinits // init funcs is are commonly used in cosmos
@@ -186,16 +186,16 @@ func init() { // nolint: gochecknoinits // init funcs is are commonly used in co
 
 	DefaultNodeHome = filepath.Join(userHomeDir, "."+Name)
 
-	// change default power reduction to 18 digits, since the onomy anom is 18 digits based.
+	// change default power reduction to 18 digits, since the enigma anom is 18 digits based.
 	sdk.DefaultPowerReduction = sdk.NewIntWithDecimal(1, 18) // nolint: gomnd
 	// change default min deposit token to 18 digits.
 	govtypes.DefaultMinDepositTokens = sdk.NewIntWithDecimal(1, 18) // nolint: gomnd
 }
 
-// OnomyApp extends an ABCI application, but with most of its parameters exported.
+// EnigmaApp extends an ABCI application, but with most of its parameters exported.
 // They are exported for convenience in creating helper functions, as object
 // capabilities aren't needed for testing.
-type OnomyApp struct {
+type EnigmaApp struct {
 	*baseapp.BaseApp
 
 	cdc               *codec.LegacyAmino
@@ -273,7 +273,7 @@ func New( // nolint:funlen // app new cosmos func
 	tkeys := sdk.NewTransientStoreKeys(paramstypes.TStoreKey)
 	memKeys := sdk.NewMemoryStoreKeys(capabilitytypes.MemStoreKey)
 
-	app := &OnomyApp{
+	app := &EnigmaApp{
 		BaseApp:           bApp,
 		cdc:               cdc,
 		appCodec:          appCodec,
@@ -537,24 +537,24 @@ func New( // nolint:funlen // app new cosmos func
 	return app
 }
 
-// Name returns the name of the OnomyApp.
-func (app *OnomyApp) Name() string { return app.BaseApp.Name() }
+// Name returns the name of the EnigmaApp.
+func (app *EnigmaApp) Name() string { return app.BaseApp.Name() }
 
 // GetBaseApp returns the base app of the application.
-func (app OnomyApp) GetBaseApp() *baseapp.BaseApp { return app.BaseApp }
+func (app EnigmaApp) GetBaseApp() *baseapp.BaseApp { return app.BaseApp }
 
 // BeginBlocker application updates every begin block.
-func (app *OnomyApp) BeginBlocker(ctx sdk.Context, req abci.RequestBeginBlock) abci.ResponseBeginBlock {
+func (app *EnigmaApp) BeginBlocker(ctx sdk.Context, req abci.RequestBeginBlock) abci.ResponseBeginBlock {
 	return app.mm.BeginBlock(ctx, req)
 }
 
 // EndBlocker application updates every end block.
-func (app *OnomyApp) EndBlocker(ctx sdk.Context, req abci.RequestEndBlock) abci.ResponseEndBlock {
+func (app *EnigmaApp) EndBlocker(ctx sdk.Context, req abci.RequestEndBlock) abci.ResponseEndBlock {
 	return app.mm.EndBlock(ctx, req)
 }
 
 // InitChainer application update at chain initialization.
-func (app *OnomyApp) InitChainer(ctx sdk.Context, req abci.RequestInitChain) abci.ResponseInitChain {
+func (app *EnigmaApp) InitChainer(ctx sdk.Context, req abci.RequestInitChain) abci.ResponseInitChain {
 	var genesisState GenesisState
 	if err := tmjson.Unmarshal(req.AppStateBytes, &genesisState); err != nil {
 		panic(err)
@@ -564,12 +564,12 @@ func (app *OnomyApp) InitChainer(ctx sdk.Context, req abci.RequestInitChain) abc
 }
 
 // LoadHeight loads a particular height.
-func (app *OnomyApp) LoadHeight(height int64) error {
+func (app *EnigmaApp) LoadHeight(height int64) error {
 	return app.LoadVersion(height)
 }
 
 // ModuleAccountAddrs returns all the app's module account addresses.
-func (app *OnomyApp) ModuleAccountAddrs() map[string]bool {
+func (app *EnigmaApp) ModuleAccountAddrs() map[string]bool {
 	modAccAddrs := make(map[string]bool)
 	for acc := range maccPerms {
 		modAccAddrs[authtypes.NewModuleAddress(acc).String()] = true
@@ -580,7 +580,7 @@ func (app *OnomyApp) ModuleAccountAddrs() map[string]bool {
 
 // BlockedAddrs returns all the app's module account addresses that are not
 // allowed to receive external tokens.
-func (app *OnomyApp) BlockedAddrs() map[string]bool {
+func (app *EnigmaApp) BlockedAddrs() map[string]bool {
 	blockedAddrs := make(map[string]bool)
 	for acc := range maccPerms {
 		blockedAddrs[authtypes.NewModuleAddress(acc).String()] = !allowedReceivingModAcc[acc]
@@ -593,7 +593,7 @@ func (app *OnomyApp) BlockedAddrs() map[string]bool {
 //
 // NOTE: This is solely to be used for testing purposes as it may be desirable
 // for modules to register their own custom testing types.
-func (app *OnomyApp) LegacyAmino() *codec.LegacyAmino {
+func (app *EnigmaApp) LegacyAmino() *codec.LegacyAmino {
 	return app.cdc
 }
 
@@ -601,47 +601,47 @@ func (app *OnomyApp) LegacyAmino() *codec.LegacyAmino {
 //
 // NOTE: This is solely to be used for testing purposes as it may be desirable
 // for modules to register their own custom testing types.
-func (app *OnomyApp) AppCodec() codec.Codec {
+func (app *EnigmaApp) AppCodec() codec.Codec {
 	return app.appCodec
 }
 
 // InterfaceRegistry returns an InterfaceRegistry.
-func (app *OnomyApp) InterfaceRegistry() types.InterfaceRegistry {
+func (app *EnigmaApp) InterfaceRegistry() types.InterfaceRegistry {
 	return app.interfaceRegistry
 }
 
 // GetKey returns the KVStoreKey for the provided store key.
 //
 // NOTE: This is solely to be used for testing purposes.
-func (app *OnomyApp) GetKey(storeKey string) *sdk.KVStoreKey {
+func (app *EnigmaApp) GetKey(storeKey string) *sdk.KVStoreKey {
 	return app.keys[storeKey]
 }
 
 // GetTKey returns the TransientStoreKey for the provided store key.
 //
 // NOTE: This is solely to be used for testing purposes.
-func (app *OnomyApp) GetTKey(storeKey string) *sdk.TransientStoreKey {
+func (app *EnigmaApp) GetTKey(storeKey string) *sdk.TransientStoreKey {
 	return app.tkeys[storeKey]
 }
 
 // GetMemKey returns the MemStoreKey for the provided mem key.
 //
 // NOTE: This is solely used for testing purposes.
-func (app *OnomyApp) GetMemKey(storeKey string) *sdk.MemoryStoreKey {
+func (app *EnigmaApp) GetMemKey(storeKey string) *sdk.MemoryStoreKey {
 	return app.memKeys[storeKey]
 }
 
 // GetSubspace returns a param subspace for a given module name.
 //
 // NOTE: This is solely to be used for testing purposes.
-func (app *OnomyApp) GetSubspace(moduleName string) paramstypes.Subspace {
+func (app *EnigmaApp) GetSubspace(moduleName string) paramstypes.Subspace {
 	subspace, _ := app.ParamsKeeper.GetSubspace(moduleName)
 	return subspace
 }
 
 // RegisterAPIRoutes registers all application module routes with the provided
 // API server.
-func (app *OnomyApp) RegisterAPIRoutes(apiSvr *api.Server, apiConfig config.APIConfig) {
+func (app *EnigmaApp) RegisterAPIRoutes(apiSvr *api.Server, apiConfig config.APIConfig) {
 	clientCtx := apiSvr.ClientCtx
 	rpc.RegisterRoutes(clientCtx, apiSvr.Router)
 	// Register legacy tx routes.
@@ -661,17 +661,17 @@ func (app *OnomyApp) RegisterAPIRoutes(apiSvr *api.Server, apiConfig config.APIC
 }
 
 // RegisterTxService implements the Application.RegisterTxService method.
-func (app *OnomyApp) RegisterTxService(clientCtx client.Context) {
+func (app *EnigmaApp) RegisterTxService(clientCtx client.Context) {
 	authtx.RegisterTxService(app.BaseApp.GRPCQueryRouter(), clientCtx, app.BaseApp.Simulate, app.interfaceRegistry)
 }
 
 // RegisterTendermintService implements the Application.RegisterTendermintService method.
-func (app *OnomyApp) RegisterTendermintService(clientCtx client.Context) {
+func (app *EnigmaApp) RegisterTendermintService(clientCtx client.Context) {
 	tmservice.RegisterTendermintService(app.BaseApp.GRPCQueryRouter(), clientCtx, app.interfaceRegistry)
 }
 
 // SetOrderEndBlockers sets the order of set end-blocker calls.
-func (app *OnomyApp) SetOrderEndBlockers(moduleNames ...string) {
+func (app *EnigmaApp) SetOrderEndBlockers(moduleNames ...string) {
 	app.mm.SetOrderEndBlockers(moduleNames...)
 }
 
@@ -696,6 +696,6 @@ func initParamsKeeper(appCodec codec.BinaryCodec, legacyAmino *codec.LegacyAmino
 }
 
 // SimulationManager implements the SimulationApp interface.
-func (app *OnomyApp) SimulationManager() *module.SimulationManager {
+func (app *EnigmaApp) SimulationManager() *module.SimulationManager {
 	return app.sm
 }

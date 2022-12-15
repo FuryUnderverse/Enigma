@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eux
-# your onomyd binary name
-BIN=onomyd
+# your enigmad binary name
+BIN=enigmad
 
 CHAIN_ID="gravity-test"
 
@@ -27,10 +27,10 @@ jq '.app_state.gov.voting_params.voting_period = "60s"' /metadata-genesis.json >
 
 # Add some funds to the community pool to test Airdrops, note that the gravity address here is the first 20 bytes
 # of the sha256 hash of 'distribution' to create the address of the module
-# To get from code: app.AccountKeeper.GetModuleAddress(distrtypes.ModuleName).String() // onomy1jv65s3grqf6v6jl3dp4t6c9t9rk99cd8a7s2c6
+# To get from code: app.AccountKeeper.GetModuleAddress(distrtypes.ModuleName).String() // enigma1jv65s3grqf6v6jl3dp4t6c9t9rk99cd8a7s2c6
 jq '.app_state.distribution.fee_pool.community_pool = [{"denom": "anom", "amount": "10000000000.0"}]' /community-pool-genesis.json > /community-pool2-genesis.json
-jq '.app_state.auth.accounts += [{"@type": "/cosmos.auth.v1beta1.ModuleAccount", "base_account": { "account_number": "0", "address": "onomy1jv65s3grqf6v6jl3dp4t6c9t9rk99cd8a7s2c6","pub_key": null,"sequence": "0"},"name": "distribution","permissions": ["basic"]}]' /community-pool2-genesis.json > /community-pool3-genesis.json
-jq '.app_state.bank.balances += [{"address": "onomy1jv65s3grqf6v6jl3dp4t6c9t9rk99cd8a7s2c6", "coins": [{"amount": "10000000000", "denom": "anom"}]}]' /community-pool3-genesis.json > /community-pool4-genesis.json
+jq '.app_state.auth.accounts += [{"@type": "/cosmos.auth.v1beta1.ModuleAccount", "base_account": { "account_number": "0", "address": "enigma1jv65s3grqf6v6jl3dp4t6c9t9rk99cd8a7s2c6","pub_key": null,"sequence": "0"},"name": "distribution","permissions": ["basic"]}]' /community-pool2-genesis.json > /community-pool3-genesis.json
+jq '.app_state.bank.balances += [{"address": "enigma1jv65s3grqf6v6jl3dp4t6c9t9rk99cd8a7s2c6", "coins": [{"amount": "10000000000", "denom": "anom"}]}]' /community-pool3-genesis.json > /community-pool4-genesis.json
 jq '.app_state.bank.supply += [{"denom": "anom", "amount": "10000000000"}]' /community-pool4-genesis.json > /edited-genesis.json
 
 # rename base denom to anom
@@ -41,11 +41,11 @@ echo "The test genesis is ready:"
 cat /genesis.json
 
 # Sets up an arbitrary number of validators on a single machine by manipulating
-# the --home parameter on onomyd
+# the --home parameter on enigmad
 for i in $(seq 1 $NODES);
 do
-ONOMY_HOME="--home /validator$i"
-ARGS="$ONOMY_HOME --keyring-backend test"
+ENIGMA_HOME="--home /validator$i"
+ARGS="$ENIGMA_HOME --keyring-backend test"
 
 # Generate a validator key, orchestrator key, and eth key for each validator
 $BIN keys add $ARGS validator$i 2>> /validator-phrases
@@ -67,14 +67,14 @@ done
 for i in $(seq 1 $NODES);
 do
 cp /genesis.json /validator$i/config/genesis.json
-ONOMY_HOME="--home /validator$i"
-ARGS="$ONOMY_HOME --keyring-backend test"
+ENIGMA_HOME="--home /validator$i"
+ARGS="$ENIGMA_HOME --keyring-backend test"
 ORCHESTRATOR_KEY=$($BIN keys show orchestrator$i -a $ARGS)
 ETHEREUM_KEY=$(grep address /validator-eth-keys | sed -n "$i"p | sed 's/.*://')
 # the /8 containing 7.7.7.7 is assigned to the DOD and never routable on the public internet
-# we're using it in private to prevent onomy from blacklisting it as unroutable
+# we're using it in private to prevent enigma from blacklisting it as unroutable
 # and allow local pex
-$BIN gravity gentx $ARGS $ONOMY_HOME --moniker validator$i --chain-id=$CHAIN_ID --ip 7.7.7.$i validator$i 500000000000000000000anom $ETHEREUM_KEY $ORCHESTRATOR_KEY
+$BIN gravity gentx $ARGS $ENIGMA_HOME --moniker validator$i --chain-id=$CHAIN_ID --ip 7.7.7.$i validator$i 500000000000000000000anom $ETHEREUM_KEY $ORCHESTRATOR_KEY
 # obviously we don't need to copy validator1's gentx to itself
 if [ $i -gt 1 ]; then
 cp /validator$i/config/gentx/* /validator1/config/gentx/

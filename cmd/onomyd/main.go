@@ -5,8 +5,8 @@ import (
 
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 
-	"github.com/onomyprotocol/onomy/app"
-	"github.com/onomyprotocol/onomy/cmd/onomyd/cmd"
+	"github.com/furyunderverse/enigma/app"
+	"github.com/furyunderverse/enigma/cmd/enigmad/cmd"
 )
 
 func main() {

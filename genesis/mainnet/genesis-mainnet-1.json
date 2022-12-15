@@ -1,6 +1,6 @@
 {
   "genesis_time": "2022-11-29T16:57:15.265449135Z",
-  "chain_id": "onomy-mainnet-1",
+  "chain_id": "enigma-mainnet-1",
   "initial_height": "1",
   "consensus_params": {
     "block": {
@@ -33,217 +33,217 @@
       "accounts": [
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1t7880vdrsxg8kzl6uj7ejswm3gavmtw3cc2eu0",
+          "address": "enigma1t7880vdrsxg8kzl6uj7ejswm3gavmtw3cc2eu0",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1k8yvzugdrf040cah7822y7mgtmyhy5kklhv6sl",
+          "address": "enigma1k8yvzugdrf040cah7822y7mgtmyhy5kklhv6sl",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1ny7vwv0s6tpq5wnczhvsc574n544d60c7xegrp",
+          "address": "enigma1ny7vwv0s6tpq5wnczhvsc574n544d60c7xegrp",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy182cy7xx8efxr9484t0tjagtrfu22auz9254lu5",
+          "address": "enigma182cy7xx8efxr9484t0tjagtrfu22auz9254lu5",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1rsuk34xmzahcfjwljvefretpyp375dajlrr7uz",
+          "address": "enigma1rsuk34xmzahcfjwljvefretpyp375dajlrr7uz",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1hfctuzmqptm00cns3k09eg9vn7lw0m3zgrs87f",
+          "address": "enigma1hfctuzmqptm00cns3k09eg9vn7lw0m3zgrs87f",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1wtn79uklwc8knnnfcl6y52gqyhklluyrepfvc0",
+          "address": "enigma1wtn79uklwc8knnnfcl6y52gqyhklluyrepfvc0",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1fx923kd9rrtzp0f6f232cvsws86l8n0da4tfrj",
+          "address": "enigma1fx923kd9rrtzp0f6f232cvsws86l8n0da4tfrj",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1rvm3tth7gpl989ss0d9mfqqkhs83dzhxz9qqmx",
+          "address": "enigma1rvm3tth7gpl989ss0d9mfqqkhs83dzhxz9qqmx",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy14cgc53qhn737ns3jez4p748va79gdlknz02xyn",
+          "address": "enigma14cgc53qhn737ns3jez4p748va79gdlknz02xyn",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy14nxcjsh2fs6m6l8y7vedxvn0tfdy88uxmerqn2",
+          "address": "enigma14nxcjsh2fs6m6l8y7vedxvn0tfdy88uxmerqn2",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1hd0l6yy6epecj87m27rjx64tz6kc0tqkc4s8af",
+          "address": "enigma1hd0l6yy6epecj87m27rjx64tz6kc0tqkc4s8af",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1nw98sn5jrf7uvd5mh8faalnqezspzx9njuqypc",
+          "address": "enigma1nw98sn5jrf7uvd5mh8faalnqezspzx9njuqypc",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy17mvfw0vu9fpwnnhykqmrg4dsfjwgxumytg9jjz",
+          "address": "enigma17mvfw0vu9fpwnnhykqmrg4dsfjwgxumytg9jjz",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1hs7udued6ka7wt3llxyu0a90azccmrj3ff5lwh",
+          "address": "enigma1hs7udued6ka7wt3llxyu0a90azccmrj3ff5lwh",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy129qlyxrajn32pvpjptu7wa7u37mtdfqujnpa58",
+          "address": "enigma129qlyxrajn32pvpjptu7wa7u37mtdfqujnpa58",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy10pjgqyhz2c9km709nrglnsnprr0h8pnvs9ykzz",
+          "address": "enigma10pjgqyhz2c9km709nrglnsnprr0h8pnvs9ykzz",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1wxe5rzs004e3ju07mcmzqfjk8nqu7dfxzy06rr",
+          "address": "enigma1wxe5rzs004e3ju07mcmzqfjk8nqu7dfxzy06rr",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1v02smz2732gmaahvnwyz2qjlpq5uckr50m4vcz",
+          "address": "enigma1v02smz2732gmaahvnwyz2qjlpq5uckr50m4vcz",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy10ewj0awg3pwhra4dw580c055ka3w28g3w2ewcf",
+          "address": "enigma10ewj0awg3pwhra4dw580c055ka3w28g3w2ewcf",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1x6mlfjektdjgum6hfgfgcz57dl4s9dss59tmjy",
+          "address": "enigma1x6mlfjektdjgum6hfgfgcz57dl4s9dss59tmjy",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1xn08yavl3520d0ykk0du2egqpcyjhrg5ulhaj9",
+          "address": "enigma1xn08yavl3520d0ykk0du2egqpcyjhrg5ulhaj9",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1a80f2tudr06k6jtg8yhgrq4and80sllj0wcz3j",
+          "address": "enigma1a80f2tudr06k6jtg8yhgrq4and80sllj0wcz3j",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1vw30wnr7ncvaasx8dr7e7xk5x8f3u99km2u748",
+          "address": "enigma1vw30wnr7ncvaasx8dr7e7xk5x8f3u99km2u748",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1w09kn8ykzcn0ugxgplqal9akvs94pp8kcv2eky",
+          "address": "enigma1w09kn8ykzcn0ugxgplqal9akvs94pp8kcv2eky",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1n426r3jk58la94mhlnufq57gllt2jaz7x84vxp",
+          "address": "enigma1n426r3jk58la94mhlnufq57gllt2jaz7x84vxp",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1525nrrumgc6cd3fexj9cyaanmh93j9a4s9txdr",
+          "address": "enigma1525nrrumgc6cd3fexj9cyaanmh93j9a4s9txdr",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy140apyzxhhf38kn7pxkdhhy27vuxytdlt7l053n",
+          "address": "enigma140apyzxhhf38kn7pxkdhhy27vuxytdlt7l053n",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1y4le3hjd3js4ql5lrunnwxxn6h52a28h4s8zhu",
+          "address": "enigma1y4le3hjd3js4ql5lrunnwxxn6h52a28h4s8zhu",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1se84n9t5ufpjerjxph8rj4c4zw57ylp5z4ymqz",
+          "address": "enigma1se84n9t5ufpjerjxph8rj4c4zw57ylp5z4ymqz",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "onomy1fewecfptznhtdvxe5sqw2m6axyes6kstdqhgtw",
+          "address": "enigma1fewecfptznhtdvxe5sqw2m6axyes6kstdqhgtw",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
@@ -252,7 +252,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1au9v2xpgpt2327y5ngqkmpuk4e8mlr7sxswvff",
+              "address": "enigma1au9v2xpgpt2327y5ngqkmpuk4e8mlr7sxswvff",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -500,7 +500,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1zfjzz4jpy0jnpx88u0sg9cvfdqddgt82890723",
+              "address": "enigma1zfjzz4jpy0jnpx88u0sg9cvfdqddgt82890723",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -748,7 +748,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy14lxzsmlkwux7qvyzwhtnwt0k3twnccy6tedkhj",
+              "address": "enigma14lxzsmlkwux7qvyzwhtnwt0k3twnccy6tedkhj",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -996,7 +996,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy17ml2a62eaqyzr5rr4scgmdpkvy3akq76sctwty",
+              "address": "enigma17ml2a62eaqyzr5rr4scgmdpkvy3akq76sctwty",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -1244,7 +1244,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1yek2nsn3027m42axha9u56c663q4fwsr8r2xcc",
+              "address": "enigma1yek2nsn3027m42axha9u56c663q4fwsr8r2xcc",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -1492,7 +1492,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1jlhp7460wpzx86ll5u3qew5xre5scucctdw8ek",
+              "address": "enigma1jlhp7460wpzx86ll5u3qew5xre5scucctdw8ek",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -1740,7 +1740,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy17xxstdkwr9fe0tldp8h9hee3w2ltz2al5c5f44",
+              "address": "enigma17xxstdkwr9fe0tldp8h9hee3w2ltz2al5c5f44",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -1988,7 +1988,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1dtvw2x25h0w9exmrg2l97gd2ukpxadhu2epj79",
+              "address": "enigma1dtvw2x25h0w9exmrg2l97gd2ukpxadhu2epj79",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -2236,7 +2236,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1n7lhzg409hjlpluwzqykdm7ls7dydu37sudhmt",
+              "address": "enigma1n7lhzg409hjlpluwzqykdm7ls7dydu37sudhmt",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -2430,7 +2430,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy16nqkt8gzzd7v5xzhzahj2chfkm2gfj6hvpyf65",
+              "address": "enigma16nqkt8gzzd7v5xzhzahj2chfkm2gfj6hvpyf65",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -2678,7 +2678,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1r3tup72x6693lmpe2kg08dgxyg9490v5p7s8z5",
+              "address": "enigma1r3tup72x6693lmpe2kg08dgxyg9490v5p7s8z5",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -2926,7 +2926,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1jqe34xjcphy260xep86huzsd7u2lup6ye66upt",
+              "address": "enigma1jqe34xjcphy260xep86huzsd7u2lup6ye66upt",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -3174,7 +3174,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1230m00anm4j4myjr5ycxx9m3zry2eelfjkvy78",
+              "address": "enigma1230m00anm4j4myjr5ycxx9m3zry2eelfjkvy78",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -3368,7 +3368,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy12h9kfzx7lwa5qez5nrnhxd868sp0zq2dvu5ezn",
+              "address": "enigma12h9kfzx7lwa5qez5nrnhxd868sp0zq2dvu5ezn",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -3562,7 +3562,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1y8lzp8danh26us8jef74jgjjpshxnjxh9c9chp",
+              "address": "enigma1y8lzp8danh26us8jef74jgjjpshxnjxh9c9chp",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -3702,7 +3702,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy13xl2yg73zrmncdrf2u6futsh9tfr6s38dzxdjl",
+              "address": "enigma13xl2yg73zrmncdrf2u6futsh9tfr6s38dzxdjl",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -3896,7 +3896,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1lwc7a6nmgr34qy6d693098mpd2sjlzk0hfu29t",
+              "address": "enigma1lwc7a6nmgr34qy6d693098mpd2sjlzk0hfu29t",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -4036,7 +4036,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1kusj70p529tk25ku86alkw63pc2d5mvjwyrpr8",
+              "address": "enigma1kusj70p529tk25ku86alkw63pc2d5mvjwyrpr8",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -4230,7 +4230,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy137cq45lefy03tpuxwwueyae7mrkfhky2sl9ykf",
+              "address": "enigma137cq45lefy03tpuxwwueyae7mrkfhky2sl9ykf",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -4370,7 +4370,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy12q9lxp80xpzzkrv4p6fp3shw6quld6hfvn0mja",
+              "address": "enigma12q9lxp80xpzzkrv4p6fp3shw6quld6hfvn0mja",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -4510,7 +4510,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1dfh6h7k2z7gw8f8n5jccdls4s2648a6tk0fxld",
+              "address": "enigma1dfh6h7k2z7gw8f8n5jccdls4s2648a6tk0fxld",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -4650,7 +4650,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1vwj305rv6wht0rj5yjmll3pam2hnq678phrcre",
+              "address": "enigma1vwj305rv6wht0rj5yjmll3pam2hnq678phrcre",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -4790,7 +4790,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy189t5dgzja2rujgk4dgdjxme0tr3ynycv6llcms",
+              "address": "enigma189t5dgzja2rujgk4dgdjxme0tr3ynycv6llcms",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -4930,7 +4930,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1m4f39dyffmly6m7c0f6uvktlges2v0j76akssh",
+              "address": "enigma1m4f39dyffmly6m7c0f6uvktlges2v0j76akssh",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -5070,7 +5070,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy18mmf7732pztevqa378n2uwlntduxpfuy3vuk5n",
+              "address": "enigma18mmf7732pztevqa378n2uwlntduxpfuy3vuk5n",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -5210,7 +5210,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy15n6le5cae0n9mmgempsalrdqp7p7eqqd3jtqg7",
+              "address": "enigma15n6le5cae0n9mmgempsalrdqp7p7eqqd3jtqg7",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -5350,7 +5350,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1ayzn743ec4en598x2kgegupd2kmpjgasf9fzzj",
+              "address": "enigma1ayzn743ec4en598x2kgegupd2kmpjgasf9fzzj",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -5490,7 +5490,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1ah0e5dhnxasxzhcrss5h3r80lg5udaakjdyrx4",
+              "address": "enigma1ah0e5dhnxasxzhcrss5h3r80lg5udaakjdyrx4",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -5630,7 +5630,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1axwljg23zmqqf7cndld7a4umjudkunuceyanzp",
+              "address": "enigma1axwljg23zmqqf7cndld7a4umjudkunuceyanzp",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -5770,7 +5770,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1p4m9lsc4jdtmgkjg3rx6csn596pu2n7cmhdkkp",
+              "address": "enigma1p4m9lsc4jdtmgkjg3rx6csn596pu2n7cmhdkkp",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -5910,7 +5910,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy13hf2tmvrdqwah8tfhtdv5lztt3723a3j6vg4zk",
+              "address": "enigma13hf2tmvrdqwah8tfhtdv5lztt3723a3j6vg4zk",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -6050,7 +6050,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy19t2gpqdampvdtcux3c49wuggxx5qdqfgcaz378",
+              "address": "enigma19t2gpqdampvdtcux3c49wuggxx5qdqfgcaz378",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -6244,7 +6244,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1k334etgpz5nk9h8n3f0k7p9swd22wdv2mwcr3a",
+              "address": "enigma1k334etgpz5nk9h8n3f0k7p9swd22wdv2mwcr3a",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -6384,7 +6384,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy19qnamejvsw30ltfmhh4fy4kq860s7fvlv3259t",
+              "address": "enigma19qnamejvsw30ltfmhh4fy4kq860s7fvlv3259t",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -6578,7 +6578,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy18940kayffx5ypqgglqwzlfwj7dq7czqj6yl6tj",
+              "address": "enigma18940kayffx5ypqgglqwzlfwj7dq7czqj6yl6tj",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -6826,7 +6826,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1rw0mapp8rmlcqcaajk826nrvqrzq5uj47vjjd0",
+              "address": "enigma1rw0mapp8rmlcqcaajk826nrvqrzq5uj47vjjd0",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -6966,7 +6966,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1mp6vz8q8rgzpaz6atgl4ed04cry985gvkfav2m",
+              "address": "enigma1mp6vz8q8rgzpaz6atgl4ed04cry985gvkfav2m",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -7106,7 +7106,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1qhz4n0vmftkgpkuyzmy3w3mth8aapnd2kuvr8u",
+              "address": "enigma1qhz4n0vmftkgpkuyzmy3w3mth8aapnd2kuvr8u",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -7246,7 +7246,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy16lrfwgrsvhgf8n3j0q0rxvf9mmmfhss6ffqujq",
+              "address": "enigma16lrfwgrsvhgf8n3j0q0rxvf9mmmfhss6ffqujq",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -7386,7 +7386,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1s8qm39yzs7ns66uk9g3a7wahhg6m2vxfx6678q",
+              "address": "enigma1s8qm39yzs7ns66uk9g3a7wahhg6m2vxfx6678q",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -7526,7 +7526,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1dxf7dh7gsu53jxg00xp83dt39rmzdjxujfmx29",
+              "address": "enigma1dxf7dh7gsu53jxg00xp83dt39rmzdjxujfmx29",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -7666,7 +7666,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1dhvva7eteqm8nxnu6yvdsl0e5mc5f6gd8q696m",
+              "address": "enigma1dhvva7eteqm8nxnu6yvdsl0e5mc5f6gd8q696m",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -7806,7 +7806,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy15xp4qmca4xshfyypdfkl47a43259t6swulv3vv",
+              "address": "enigma15xp4qmca4xshfyypdfkl47a43259t6swulv3vv",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -7946,7 +7946,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1wcdjfht27vmjy7saly9dyj3wtx39rqeaku69q9",
+              "address": "enigma1wcdjfht27vmjy7saly9dyj3wtx39rqeaku69q9",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -8086,7 +8086,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1se7h6vnszjz5qa2xgnlgdy8rz28p96yuujpz0h",
+              "address": "enigma1se7h6vnszjz5qa2xgnlgdy8rz28p96yuujpz0h",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -8226,7 +8226,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy15t8mdf0zmfhupzjduq3glhchr82ex7enqapp0s",
+              "address": "enigma15t8mdf0zmfhupzjduq3glhchr82ex7enqapp0s",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -8366,7 +8366,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1266uusj0x77u85vnqm9tcgyfh3zgqamy2usj7n",
+              "address": "enigma1266uusj0x77u85vnqm9tcgyfh3zgqamy2usj7n",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -8506,7 +8506,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1g60ehjmcstm0waknry84cvyyv2s4nz2yf9f964",
+              "address": "enigma1g60ehjmcstm0waknry84cvyyv2s4nz2yf9f964",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -8646,7 +8646,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1ueuncjn7devskqjjweyjhg6fvqngrzrnqaw0je",
+              "address": "enigma1ueuncjn7devskqjjweyjhg6fvqngrzrnqaw0je",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -8786,7 +8786,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1g2us85hpc7cvsgmk087xtyly4wtys290duaa87",
+              "address": "enigma1g2us85hpc7cvsgmk087xtyly4wtys290duaa87",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -8926,7 +8926,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1y2sq3tvkpf8qqszcrhum5fp4eyxkscnm5ufzpj",
+              "address": "enigma1y2sq3tvkpf8qqszcrhum5fp4eyxkscnm5ufzpj",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -9120,7 +9120,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1dzkvkjcerh59s795desceavs2javms2xykzrn5",
+              "address": "enigma1dzkvkjcerh59s795desceavs2javms2xykzrn5",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -9260,7 +9260,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1uz04037m5kp2jkz2ku4aa2emzdc55rsm9t7scl",
+              "address": "enigma1uz04037m5kp2jkz2ku4aa2emzdc55rsm9t7scl",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -9400,7 +9400,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1wafec0whn84qc3c4cwrswlmu32nehy4vwfgy7p",
+              "address": "enigma1wafec0whn84qc3c4cwrswlmu32nehy4vwfgy7p",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -9594,7 +9594,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1jaedtfgcdgvzdmw9ar0s2e2a636jwetdggcp5q",
+              "address": "enigma1jaedtfgcdgvzdmw9ar0s2e2a636jwetdggcp5q",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -9734,7 +9734,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1jvss4yydkhmyqh06thl758rpu4svprapa8furt",
+              "address": "enigma1jvss4yydkhmyqh06thl758rpu4svprapa8furt",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -9928,7 +9928,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1ypygpcq84faneh06cw0m3t2qtsyl5nj4md6ak4",
+              "address": "enigma1ypygpcq84faneh06cw0m3t2qtsyl5nj4md6ak4",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -10176,7 +10176,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1jz9k6nh808h6pwgff2e43nt8jvk2npr0mc92au",
+              "address": "enigma1jz9k6nh808h6pwgff2e43nt8jvk2npr0mc92au",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -10370,7 +10370,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1qpje72uaz2udzp4nmpnd8hzlq5xy3lkfsvx6tw",
+              "address": "enigma1qpje72uaz2udzp4nmpnd8hzlq5xy3lkfsvx6tw",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -10564,7 +10564,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1wcexsd95wfwkt409awsa6x0ld3z2jdmjtvwlyt",
+              "address": "enigma1wcexsd95wfwkt409awsa6x0ld3z2jdmjtvwlyt",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -10704,7 +10704,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy19m3n8yvvefy7ynhl5z4vawar6nrlqkum0jyjth",
+              "address": "enigma19m3n8yvvefy7ynhl5z4vawar6nrlqkum0jyjth",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -10952,7 +10952,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy18rrjgkq7jge859ryu9vlm2qmn30k2pjpp2vckh",
+              "address": "enigma18rrjgkq7jge859ryu9vlm2qmn30k2pjpp2vckh",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -11092,7 +11092,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy187k4vzggkx0kdurxg3xffdeehnfw4m0h0a0uyy",
+              "address": "enigma187k4vzggkx0kdurxg3xffdeehnfw4m0h0a0uyy",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -11232,7 +11232,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1gcz2tjuel4w6q3v4ec92eu4nvey6fkgnfxpak6",
+              "address": "enigma1gcz2tjuel4w6q3v4ec92eu4nvey6fkgnfxpak6",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -11372,7 +11372,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1vfuvxhsnzk70lh22uk57pj8ynxlfnyfay4vfvn",
+              "address": "enigma1vfuvxhsnzk70lh22uk57pj8ynxlfnyfay4vfvn",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -11512,7 +11512,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1uvfe4swadqtp5haf9q79x4ehyrqq2q9ft5qwr6",
+              "address": "enigma1uvfe4swadqtp5haf9q79x4ehyrqq2q9ft5qwr6",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -11652,7 +11652,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1t0txjumkjx0p97z87eqhwj3xy4mhtklwmnm9xp",
+              "address": "enigma1t0txjumkjx0p97z87eqhwj3xy4mhtklwmnm9xp",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -11900,7 +11900,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy199gyvv7urac4cmtl554cz5y5fggp2z47aekvqs",
+              "address": "enigma199gyvv7urac4cmtl554cz5y5fggp2z47aekvqs",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -12148,7 +12148,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1zwdtj8xj0t922y3ax50849qj4j6kxc3leeepfr",
+              "address": "enigma1zwdtj8xj0t922y3ax50849qj4j6kxc3leeepfr",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -12396,7 +12396,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1r45j0c6y6hmj7f0kxukehxexrc75wa5ju5z9lr",
+              "address": "enigma1r45j0c6y6hmj7f0kxukehxexrc75wa5ju5z9lr",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -12536,7 +12536,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1acuhm7vywaus7n6kw7486cvplc48jvc5przh4f",
+              "address": "enigma1acuhm7vywaus7n6kw7486cvplc48jvc5przh4f",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -12784,7 +12784,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1ff3zt3w0tmexm76awrk9wepqq9dlhqeq0hdal3",
+              "address": "enigma1ff3zt3w0tmexm76awrk9wepqq9dlhqeq0hdal3",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -12924,7 +12924,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1vp0gw4tvgpq2nd837rqne0h96ye4vdapg9wcjw",
+              "address": "enigma1vp0gw4tvgpq2nd837rqne0h96ye4vdapg9wcjw",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -13118,7 +13118,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1ngd69xtfy3egqm3wwtg6gwgd4dn6es8ewt7uem",
+              "address": "enigma1ngd69xtfy3egqm3wwtg6gwgd4dn6es8ewt7uem",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -13312,7 +13312,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1jc2wgsfm0dx8lq0rnpfc96cwkr3s69jwd3ylgz",
+              "address": "enigma1jc2wgsfm0dx8lq0rnpfc96cwkr3s69jwd3ylgz",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -13452,7 +13452,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1dsq86zp7wfda488d3ppqx4z4wmg4dt2lz8mpza",
+              "address": "enigma1dsq86zp7wfda488d3ppqx4z4wmg4dt2lz8mpza",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -13592,7 +13592,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1vmdnrdte5n4dew246qk33wcss73dahnj42hm2p",
+              "address": "enigma1vmdnrdte5n4dew246qk33wcss73dahnj42hm2p",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -13732,7 +13732,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy10jjg87jtl6arc6f9dlrlfh4rskxdyyrxv3uxpe",
+              "address": "enigma10jjg87jtl6arc6f9dlrlfh4rskxdyyrxv3uxpe",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -13872,7 +13872,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1dkwqhasz46svluxjjumgfyfdzgp5kq3v72lhee",
+              "address": "enigma1dkwqhasz46svluxjjumgfyfdzgp5kq3v72lhee",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -14012,7 +14012,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1yrxnm2n668cuxch9mad4ekvzxck3qrprfppkwe",
+              "address": "enigma1yrxnm2n668cuxch9mad4ekvzxck3qrprfppkwe",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -14152,7 +14152,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1utectfedtcwkk6y8znngrcwgpla4adqqgg70et",
+              "address": "enigma1utectfedtcwkk6y8znngrcwgpla4adqqgg70et",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -14292,7 +14292,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1ssxxw0r0x3t5egsj6zyhjpkr0nwd08pxm3kntl",
+              "address": "enigma1ssxxw0r0x3t5egsj6zyhjpkr0nwd08pxm3kntl",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -14432,7 +14432,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1xgn7e5yqh04hug0mh34mmea3e7erl7xs83x8js",
+              "address": "enigma1xgn7e5yqh04hug0mh34mmea3e7erl7xs83x8js",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -14572,7 +14572,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1dcv3ut53aneksf5sr7dtklfy2fada6m6veeqxq",
+              "address": "enigma1dcv3ut53aneksf5sr7dtklfy2fada6m6veeqxq",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -14712,7 +14712,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1vc44nctyuujfppmgul034eeldw8ke9w4q36ny0",
+              "address": "enigma1vc44nctyuujfppmgul034eeldw8ke9w4q36ny0",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -14852,7 +14852,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1302z68lkj2qa4c9qxh387pr973k8ulvj6880vu",
+              "address": "enigma1302z68lkj2qa4c9qxh387pr973k8ulvj6880vu",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -15100,7 +15100,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1qq5huxf0yckrj0wshg88kkr4gu3kru9hxdtcy5",
+              "address": "enigma1qq5huxf0yckrj0wshg88kkr4gu3kru9hxdtcy5",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -15348,7 +15348,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1k2jqyk6f07khm72zrl6rrg99d4llvce5wjk5g8",
+              "address": "enigma1k2jqyk6f07khm72zrl6rrg99d4llvce5wjk5g8",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -15488,7 +15488,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1ajnw4xzw8969fw39dr2e6f035nxmpsmv0v0sdk",
+              "address": "enigma1ajnw4xzw8969fw39dr2e6f035nxmpsmv0v0sdk",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -15628,7 +15628,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1pvtc3g6agqfyhd0kq6klf84uyj5j2v2dy4pt87",
+              "address": "enigma1pvtc3g6agqfyhd0kq6klf84uyj5j2v2dy4pt87",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -15768,7 +15768,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1svhkrt99mws9h7s4kpdw2ge9vfe3fvqjkgjl7e",
+              "address": "enigma1svhkrt99mws9h7s4kpdw2ge9vfe3fvqjkgjl7e",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -15908,7 +15908,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1d6hckz4kk93apwwsw478pmyg9wk92tt7prxqq9",
+              "address": "enigma1d6hckz4kk93apwwsw478pmyg9wk92tt7prxqq9",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -16048,7 +16048,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1pp83j4yey8q095fl9cfa93xpa0v4ndyxcste9a",
+              "address": "enigma1pp83j4yey8q095fl9cfa93xpa0v4ndyxcste9a",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -16188,7 +16188,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1679kuqsrstjenymnfxzpn6ppsfqhw60gfadgwc",
+              "address": "enigma1679kuqsrstjenymnfxzpn6ppsfqhw60gfadgwc",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -16436,7 +16436,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy1x7aawf5znxd3mdusdk9np5xx0z4hhqxlkl75hm",
+              "address": "enigma1x7aawf5znxd3mdusdk9np5xx0z4hhqxlkl75hm",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -16576,7 +16576,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy14jsflphcuq9ugjj4y80ddgcd7mn3dy0fkk9af8",
+              "address": "enigma14jsflphcuq9ugjj4y80ddgcd7mn3dy0fkk9af8",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -16716,7 +16716,7 @@
           "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "onomy17l2me5uxmyrqfp4tu43zdynaw0z3vf8p89463d",
+              "address": "enigma17l2me5uxmyrqfp4tu43zdynaw0z3vf8p89463d",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -16861,7 +16861,7 @@
       },
       "balances": [
         {
-          "address": "onomy1qq5huxf0yckrj0wshg88kkr4gu3kru9hxdtcy5",
+          "address": "enigma1qq5huxf0yckrj0wshg88kkr4gu3kru9hxdtcy5",
           "coins": [
             {
               "denom": "anom",
@@ -16870,7 +16870,7 @@
           ]
         },
         {
-          "address": "onomy1qpje72uaz2udzp4nmpnd8hzlq5xy3lkfsvx6tw",
+          "address": "enigma1qpje72uaz2udzp4nmpnd8hzlq5xy3lkfsvx6tw",
           "coins": [
             {
               "denom": "anom",
@@ -16879,7 +16879,7 @@
           ]
         },
         {
-          "address": "onomy1qhz4n0vmftkgpkuyzmy3w3mth8aapnd2kuvr8u",
+          "address": "enigma1qhz4n0vmftkgpkuyzmy3w3mth8aapnd2kuvr8u",
           "coins": [
             {
               "denom": "anom",
@@ -16888,7 +16888,7 @@
           ]
         },
         {
-          "address": "onomy1pp83j4yey8q095fl9cfa93xpa0v4ndyxcste9a",
+          "address": "enigma1pp83j4yey8q095fl9cfa93xpa0v4ndyxcste9a",
           "coins": [
             {
               "denom": "anom",
@@ -16897,7 +16897,7 @@
           ]
         },
         {
-          "address": "onomy1pvtc3g6agqfyhd0kq6klf84uyj5j2v2dy4pt87",
+          "address": "enigma1pvtc3g6agqfyhd0kq6klf84uyj5j2v2dy4pt87",
           "coins": [
             {
               "denom": "anom",
@@ -16906,7 +16906,7 @@
           ]
         },
         {
-          "address": "onomy1p4m9lsc4jdtmgkjg3rx6csn596pu2n7cmhdkkp",
+          "address": "enigma1p4m9lsc4jdtmgkjg3rx6csn596pu2n7cmhdkkp",
           "coins": [
             {
               "denom": "anom",
@@ -16915,7 +16915,7 @@
           ]
         },
         {
-          "address": "onomy1zfjzz4jpy0jnpx88u0sg9cvfdqddgt82890723",
+          "address": "enigma1zfjzz4jpy0jnpx88u0sg9cvfdqddgt82890723",
           "coins": [
             {
               "denom": "anom",
@@ -16924,7 +16924,7 @@
           ]
         },
         {
-          "address": "onomy1zwdtj8xj0t922y3ax50849qj4j6kxc3leeepfr",
+          "address": "enigma1zwdtj8xj0t922y3ax50849qj4j6kxc3leeepfr",
           "coins": [
             {
               "denom": "anom",
@@ -16933,7 +16933,7 @@
           ]
         },
         {
-          "address": "onomy1rvm3tth7gpl989ss0d9mfqqkhs83dzhxz9qqmx",
+          "address": "enigma1rvm3tth7gpl989ss0d9mfqqkhs83dzhxz9qqmx",
           "coins": [
             {
               "denom": "anom",
@@ -16942,7 +16942,7 @@
           ]
         },
         {
-          "address": "onomy1rw0mapp8rmlcqcaajk826nrvqrzq5uj47vjjd0",
+          "address": "enigma1rw0mapp8rmlcqcaajk826nrvqrzq5uj47vjjd0",
           "coins": [
             {
               "denom": "anom",
@@ -16951,7 +16951,7 @@
           ]
         },
         {
-          "address": "onomy1rsuk34xmzahcfjwljvefretpyp375dajlrr7uz",
+          "address": "enigma1rsuk34xmzahcfjwljvefretpyp375dajlrr7uz",
           "coins": [
             {
               "denom": "anom",
@@ -16960,7 +16960,7 @@
           ]
         },
         {
-          "address": "onomy1r3tup72x6693lmpe2kg08dgxyg9490v5p7s8z5",
+          "address": "enigma1r3tup72x6693lmpe2kg08dgxyg9490v5p7s8z5",
           "coins": [
             {
               "denom": "anom",
@@ -16969,7 +16969,7 @@
           ]
         },
         {
-          "address": "onomy1r45j0c6y6hmj7f0kxukehxexrc75wa5ju5z9lr",
+          "address": "enigma1r45j0c6y6hmj7f0kxukehxexrc75wa5ju5z9lr",
           "coins": [
             {
               "denom": "anom",
@@ -16978,7 +16978,7 @@
           ]
         },
         {
-          "address": "onomy1ypygpcq84faneh06cw0m3t2qtsyl5nj4md6ak4",
+          "address": "enigma1ypygpcq84faneh06cw0m3t2qtsyl5nj4md6ak4",
           "coins": [
             {
               "denom": "anom",
@@ -16987,7 +16987,7 @@
           ]
         },
         {
-          "address": "onomy1yrxnm2n668cuxch9mad4ekvzxck3qrprfppkwe",
+          "address": "enigma1yrxnm2n668cuxch9mad4ekvzxck3qrprfppkwe",
           "coins": [
             {
               "denom": "anom",
@@ -16996,7 +16996,7 @@
           ]
         },
         {
-          "address": "onomy1y8lzp8danh26us8jef74jgjjpshxnjxh9c9chp",
+          "address": "enigma1y8lzp8danh26us8jef74jgjjpshxnjxh9c9chp",
           "coins": [
             {
               "denom": "anom",
@@ -17005,7 +17005,7 @@
           ]
         },
         {
-          "address": "onomy1y2sq3tvkpf8qqszcrhum5fp4eyxkscnm5ufzpj",
+          "address": "enigma1y2sq3tvkpf8qqszcrhum5fp4eyxkscnm5ufzpj",
           "coins": [
             {
               "denom": "anom",
@@ -17014,7 +17014,7 @@
           ]
         },
         {
-          "address": "onomy1y4le3hjd3js4ql5lrunnwxxn6h52a28h4s8zhu",
+          "address": "enigma1y4le3hjd3js4ql5lrunnwxxn6h52a28h4s8zhu",
           "coins": [
             {
               "denom": "anom",
@@ -17023,7 +17023,7 @@
           ]
         },
         {
-          "address": "onomy1yek2nsn3027m42axha9u56c663q4fwsr8r2xcc",
+          "address": "enigma1yek2nsn3027m42axha9u56c663q4fwsr8r2xcc",
           "coins": [
             {
               "denom": "anom",
@@ -17032,7 +17032,7 @@
           ]
         },
         {
-          "address": "onomy19qnamejvsw30ltfmhh4fy4kq860s7fvlv3259t",
+          "address": "enigma19qnamejvsw30ltfmhh4fy4kq860s7fvlv3259t",
           "coins": [
             {
               "denom": "anom",
@@ -17041,7 +17041,7 @@
           ]
         },
         {
-          "address": "onomy199gyvv7urac4cmtl554cz5y5fggp2z47aekvqs",
+          "address": "enigma199gyvv7urac4cmtl554cz5y5fggp2z47aekvqs",
           "coins": [
             {
               "denom": "anom",
@@ -17050,7 +17050,7 @@
           ]
         },
         {
-          "address": "onomy19t2gpqdampvdtcux3c49wuggxx5qdqfgcaz378",
+          "address": "enigma19t2gpqdampvdtcux3c49wuggxx5qdqfgcaz378",
           "coins": [
             {
               "denom": "anom",
@@ -17059,7 +17059,7 @@
           ]
         },
         {
-          "address": "onomy19m3n8yvvefy7ynhl5z4vawar6nrlqkum0jyjth",
+          "address": "enigma19m3n8yvvefy7ynhl5z4vawar6nrlqkum0jyjth",
           "coins": [
             {
               "denom": "anom",
@@ -17068,7 +17068,7 @@
           ]
         },
         {
-          "address": "onomy1xgn7e5yqh04hug0mh34mmea3e7erl7xs83x8js",
+          "address": "enigma1xgn7e5yqh04hug0mh34mmea3e7erl7xs83x8js",
           "coins": [
             {
               "denom": "anom",
@@ -17077,7 +17077,7 @@
           ]
         },
         {
-          "address": "onomy1xn08yavl3520d0ykk0du2egqpcyjhrg5ulhaj9",
+          "address": "enigma1xn08yavl3520d0ykk0du2egqpcyjhrg5ulhaj9",
           "coins": [
             {
               "denom": "anom",
@@ -17086,7 +17086,7 @@
           ]
         },
         {
-          "address": "onomy1x6mlfjektdjgum6hfgfgcz57dl4s9dss59tmjy",
+          "address": "enigma1x6mlfjektdjgum6hfgfgcz57dl4s9dss59tmjy",
           "coins": [
             {
               "denom": "anom",
@@ -17095,7 +17095,7 @@
           ]
         },
         {
-          "address": "onomy1x7aawf5znxd3mdusdk9np5xx0z4hhqxlkl75hm",
+          "address": "enigma1x7aawf5znxd3mdusdk9np5xx0z4hhqxlkl75hm",
           "coins": [
             {
               "denom": "anom",
@@ -17104,7 +17104,7 @@
           ]
         },
         {
-          "address": "onomy18rrjgkq7jge859ryu9vlm2qmn30k2pjpp2vckh",
+          "address": "enigma18rrjgkq7jge859ryu9vlm2qmn30k2pjpp2vckh",
           "coins": [
             {
               "denom": "anom",
@@ -17113,7 +17113,7 @@
           ]
         },
         {
-          "address": "onomy189t5dgzja2rujgk4dgdjxme0tr3ynycv6llcms",
+          "address": "enigma189t5dgzja2rujgk4dgdjxme0tr3ynycv6llcms",
           "coins": [
             {
               "denom": "anom",
@@ -17122,7 +17122,7 @@
           ]
         },
         {
-          "address": "onomy18940kayffx5ypqgglqwzlfwj7dq7czqj6yl6tj",
+          "address": "enigma18940kayffx5ypqgglqwzlfwj7dq7czqj6yl6tj",
           "coins": [
             {
               "denom": "anom",
@@ -17131,7 +17131,7 @@
           ]
         },
         {
-          "address": "onomy182cy7xx8efxr9484t0tjagtrfu22auz9254lu5",
+          "address": "enigma182cy7xx8efxr9484t0tjagtrfu22auz9254lu5",
           "coins": [
             {
               "denom": "anom",
@@ -17140,7 +17140,7 @@
           ]
         },
         {
-          "address": "onomy18mmf7732pztevqa378n2uwlntduxpfuy3vuk5n",
+          "address": "enigma18mmf7732pztevqa378n2uwlntduxpfuy3vuk5n",
           "coins": [
             {
               "denom": "anom",
@@ -17149,7 +17149,7 @@
           ]
         },
         {
-          "address": "onomy187k4vzggkx0kdurxg3xffdeehnfw4m0h0a0uyy",
+          "address": "enigma187k4vzggkx0kdurxg3xffdeehnfw4m0h0a0uyy",
           "coins": [
             {
               "denom": "anom",
@@ -17158,7 +17158,7 @@
           ]
         },
         {
-          "address": "onomy1g2us85hpc7cvsgmk087xtyly4wtys290duaa87",
+          "address": "enigma1g2us85hpc7cvsgmk087xtyly4wtys290duaa87",
           "coins": [
             {
               "denom": "anom",
@@ -17167,7 +17167,7 @@
           ]
         },
         {
-          "address": "onomy1gcz2tjuel4w6q3v4ec92eu4nvey6fkgnfxpak6",
+          "address": "enigma1gcz2tjuel4w6q3v4ec92eu4nvey6fkgnfxpak6",
           "coins": [
             {
               "denom": "anom",
@@ -17176,7 +17176,7 @@
           ]
         },
         {
-          "address": "onomy1g60ehjmcstm0waknry84cvyyv2s4nz2yf9f964",
+          "address": "enigma1g60ehjmcstm0waknry84cvyyv2s4nz2yf9f964",
           "coins": [
             {
               "denom": "anom",
@@ -17185,7 +17185,7 @@
           ]
         },
         {
-          "address": "onomy1fx923kd9rrtzp0f6f232cvsws86l8n0da4tfrj",
+          "address": "enigma1fx923kd9rrtzp0f6f232cvsws86l8n0da4tfrj",
           "coins": [
             {
               "denom": "anom",
@@ -17194,7 +17194,7 @@
           ]
         },
         {
-          "address": "onomy1ff3zt3w0tmexm76awrk9wepqq9dlhqeq0hdal3",
+          "address": "enigma1ff3zt3w0tmexm76awrk9wepqq9dlhqeq0hdal3",
           "coins": [
             {
               "denom": "anom",
@@ -17203,7 +17203,7 @@
           ]
         },
         {
-          "address": "onomy1fewecfptznhtdvxe5sqw2m6axyes6kstdqhgtw",
+          "address": "enigma1fewecfptznhtdvxe5sqw2m6axyes6kstdqhgtw",
           "coins": [
             {
               "denom": "anom",
@@ -17212,7 +17212,7 @@
           ]
         },
         {
-          "address": "onomy12q9lxp80xpzzkrv4p6fp3shw6quld6hfvn0mja",
+          "address": "enigma12q9lxp80xpzzkrv4p6fp3shw6quld6hfvn0mja",
           "coins": [
             {
               "denom": "anom",
@@ -17221,7 +17221,7 @@
           ]
         },
         {
-          "address": "onomy129qlyxrajn32pvpjptu7wa7u37mtdfqujnpa58",
+          "address": "enigma129qlyxrajn32pvpjptu7wa7u37mtdfqujnpa58",
           "coins": [
             {
               "denom": "anom",
@@ -17230,7 +17230,7 @@
           ]
         },
         {
-          "address": "onomy1230m00anm4j4myjr5ycxx9m3zry2eelfjkvy78",
+          "address": "enigma1230m00anm4j4myjr5ycxx9m3zry2eelfjkvy78",
           "coins": [
             {
               "denom": "anom",
@@ -17239,7 +17239,7 @@
           ]
         },
         {
-          "address": "onomy12h9kfzx7lwa5qez5nrnhxd868sp0zq2dvu5ezn",
+          "address": "enigma12h9kfzx7lwa5qez5nrnhxd868sp0zq2dvu5ezn",
           "coins": [
             {
               "denom": "anom",
@@ -17248,7 +17248,7 @@
           ]
         },
         {
-          "address": "onomy1266uusj0x77u85vnqm9tcgyfh3zgqamy2usj7n",
+          "address": "enigma1266uusj0x77u85vnqm9tcgyfh3zgqamy2usj7n",
           "coins": [
             {
               "denom": "anom",
@@ -17257,7 +17257,7 @@
           ]
         },
         {
-          "address": "onomy1t0txjumkjx0p97z87eqhwj3xy4mhtklwmnm9xp",
+          "address": "enigma1t0txjumkjx0p97z87eqhwj3xy4mhtklwmnm9xp",
           "coins": [
             {
               "denom": "anom",
@@ -17266,7 +17266,7 @@
           ]
         },
         {
-          "address": "onomy1t7880vdrsxg8kzl6uj7ejswm3gavmtw3cc2eu0",
+          "address": "enigma1t7880vdrsxg8kzl6uj7ejswm3gavmtw3cc2eu0",
           "coins": [
             {
               "denom": "anom",
@@ -17275,7 +17275,7 @@
           ]
         },
         {
-          "address": "onomy1vp0gw4tvgpq2nd837rqne0h96ye4vdapg9wcjw",
+          "address": "enigma1vp0gw4tvgpq2nd837rqne0h96ye4vdapg9wcjw",
           "coins": [
             {
               "denom": "anom",
@@ -17284,7 +17284,7 @@
           ]
         },
         {
-          "address": "onomy1vfuvxhsnzk70lh22uk57pj8ynxlfnyfay4vfvn",
+          "address": "enigma1vfuvxhsnzk70lh22uk57pj8ynxlfnyfay4vfvn",
           "coins": [
             {
               "denom": "anom",
@@ -17293,7 +17293,7 @@
           ]
         },
         {
-          "address": "onomy1vw30wnr7ncvaasx8dr7e7xk5x8f3u99km2u748",
+          "address": "enigma1vw30wnr7ncvaasx8dr7e7xk5x8f3u99km2u748",
           "coins": [
             {
               "denom": "anom",
@@ -17302,7 +17302,7 @@
           ]
         },
         {
-          "address": "onomy1vwj305rv6wht0rj5yjmll3pam2hnq678phrcre",
+          "address": "enigma1vwj305rv6wht0rj5yjmll3pam2hnq678phrcre",
           "coins": [
             {
               "denom": "anom",
@@ -17311,7 +17311,7 @@
           ]
         },
         {
-          "address": "onomy1v02smz2732gmaahvnwyz2qjlpq5uckr50m4vcz",
+          "address": "enigma1v02smz2732gmaahvnwyz2qjlpq5uckr50m4vcz",
           "coins": [
             {
               "denom": "anom",
@@ -17320,7 +17320,7 @@
           ]
         },
         {
-          "address": "onomy1vc44nctyuujfppmgul034eeldw8ke9w4q36ny0",
+          "address": "enigma1vc44nctyuujfppmgul034eeldw8ke9w4q36ny0",
           "coins": [
             {
               "denom": "anom",
@@ -17329,7 +17329,7 @@
           ]
         },
         {
-          "address": "onomy1vmdnrdte5n4dew246qk33wcss73dahnj42hm2p",
+          "address": "enigma1vmdnrdte5n4dew246qk33wcss73dahnj42hm2p",
           "coins": [
             {
               "denom": "anom",
@@ -17338,7 +17338,7 @@
           ]
         },
         {
-          "address": "onomy1dzkvkjcerh59s795desceavs2javms2xykzrn5",
+          "address": "enigma1dzkvkjcerh59s795desceavs2javms2xykzrn5",
           "coins": [
             {
               "denom": "anom",
@@ -17347,7 +17347,7 @@
           ]
         },
         {
-          "address": "onomy1dxf7dh7gsu53jxg00xp83dt39rmzdjxujfmx29",
+          "address": "enigma1dxf7dh7gsu53jxg00xp83dt39rmzdjxujfmx29",
           "coins": [
             {
               "denom": "anom",
@@ -17356,7 +17356,7 @@
           ]
         },
         {
-          "address": "onomy1dfh6h7k2z7gw8f8n5jccdls4s2648a6tk0fxld",
+          "address": "enigma1dfh6h7k2z7gw8f8n5jccdls4s2648a6tk0fxld",
           "coins": [
             {
               "denom": "anom",
@@ -17365,7 +17365,7 @@
           ]
         },
         {
-          "address": "onomy1dtvw2x25h0w9exmrg2l97gd2ukpxadhu2epj79",
+          "address": "enigma1dtvw2x25h0w9exmrg2l97gd2ukpxadhu2epj79",
           "coins": [
             {
               "denom": "anom",
@@ -17374,7 +17374,7 @@
           ]
         },
         {
-          "address": "onomy1dsq86zp7wfda488d3ppqx4z4wmg4dt2lz8mpza",
+          "address": "enigma1dsq86zp7wfda488d3ppqx4z4wmg4dt2lz8mpza",
           "coins": [
             {
               "denom": "anom",
@@ -17383,7 +17383,7 @@
           ]
         },
         {
-          "address": "onomy1dkwqhasz46svluxjjumgfyfdzgp5kq3v72lhee",
+          "address": "enigma1dkwqhasz46svluxjjumgfyfdzgp5kq3v72lhee",
           "coins": [
             {
               "denom": "anom",
@@ -17392,7 +17392,7 @@
           ]
         },
         {
-          "address": "onomy1dhvva7eteqm8nxnu6yvdsl0e5mc5f6gd8q696m",
+          "address": "enigma1dhvva7eteqm8nxnu6yvdsl0e5mc5f6gd8q696m",
           "coins": [
             {
               "denom": "anom",
@@ -17401,7 +17401,7 @@
           ]
         },
         {
-          "address": "onomy1dcv3ut53aneksf5sr7dtklfy2fada6m6veeqxq",
+          "address": "enigma1dcv3ut53aneksf5sr7dtklfy2fada6m6veeqxq",
           "coins": [
             {
               "denom": "anom",
@@ -17410,7 +17410,7 @@
           ]
         },
         {
-          "address": "onomy1d6hckz4kk93apwwsw478pmyg9wk92tt7prxqq9",
+          "address": "enigma1d6hckz4kk93apwwsw478pmyg9wk92tt7prxqq9",
           "coins": [
             {
               "denom": "anom",
@@ -17419,7 +17419,7 @@
           ]
         },
         {
-          "address": "onomy1wxe5rzs004e3ju07mcmzqfjk8nqu7dfxzy06rr",
+          "address": "enigma1wxe5rzs004e3ju07mcmzqfjk8nqu7dfxzy06rr",
           "coins": [
             {
               "denom": "anom",
@@ -17428,7 +17428,7 @@
           ]
         },
         {
-          "address": "onomy1wtn79uklwc8knnnfcl6y52gqyhklluyrepfvc0",
+          "address": "enigma1wtn79uklwc8knnnfcl6y52gqyhklluyrepfvc0",
           "coins": [
             {
               "denom": "anom",
@@ -17437,7 +17437,7 @@
           ]
         },
         {
-          "address": "onomy1w09kn8ykzcn0ugxgplqal9akvs94pp8kcv2eky",
+          "address": "enigma1w09kn8ykzcn0ugxgplqal9akvs94pp8kcv2eky",
           "coins": [
             {
               "denom": "anom",
@@ -17446,7 +17446,7 @@
           ]
         },
         {
-          "address": "onomy1wcdjfht27vmjy7saly9dyj3wtx39rqeaku69q9",
+          "address": "enigma1wcdjfht27vmjy7saly9dyj3wtx39rqeaku69q9",
           "coins": [
             {
               "denom": "anom",
@@ -17455,7 +17455,7 @@
           ]
         },
         {
-          "address": "onomy1wcexsd95wfwkt409awsa6x0ld3z2jdmjtvwlyt",
+          "address": "enigma1wcexsd95wfwkt409awsa6x0ld3z2jdmjtvwlyt",
           "coins": [
             {
               "denom": "anom",
@@ -17464,7 +17464,7 @@
           ]
         },
         {
-          "address": "onomy1wafec0whn84qc3c4cwrswlmu32nehy4vwfgy7p",
+          "address": "enigma1wafec0whn84qc3c4cwrswlmu32nehy4vwfgy7p",
           "coins": [
             {
               "denom": "anom",
@@ -17473,7 +17473,7 @@
           ]
         },
         {
-          "address": "onomy10pjgqyhz2c9km709nrglnsnprr0h8pnvs9ykzz",
+          "address": "enigma10pjgqyhz2c9km709nrglnsnprr0h8pnvs9ykzz",
           "coins": [
             {
               "denom": "anom",
@@ -17482,7 +17482,7 @@
           ]
         },
         {
-          "address": "onomy10jjg87jtl6arc6f9dlrlfh4rskxdyyrxv3uxpe",
+          "address": "enigma10jjg87jtl6arc6f9dlrlfh4rskxdyyrxv3uxpe",
           "coins": [
             {
               "denom": "anom",
@@ -17491,7 +17491,7 @@
           ]
         },
         {
-          "address": "onomy10ewj0awg3pwhra4dw580c055ka3w28g3w2ewcf",
+          "address": "enigma10ewj0awg3pwhra4dw580c055ka3w28g3w2ewcf",
           "coins": [
             {
               "denom": "anom",
@@ -17500,7 +17500,7 @@
           ]
         },
         {
-          "address": "onomy1s8qm39yzs7ns66uk9g3a7wahhg6m2vxfx6678q",
+          "address": "enigma1s8qm39yzs7ns66uk9g3a7wahhg6m2vxfx6678q",
           "coins": [
             {
               "denom": "anom",
@@ -17509,7 +17509,7 @@
           ]
         },
         {
-          "address": "onomy1svhkrt99mws9h7s4kpdw2ge9vfe3fvqjkgjl7e",
+          "address": "enigma1svhkrt99mws9h7s4kpdw2ge9vfe3fvqjkgjl7e",
           "coins": [
             {
               "denom": "anom",
@@ -17518,7 +17518,7 @@
           ]
         },
         {
-          "address": "onomy1ssxxw0r0x3t5egsj6zyhjpkr0nwd08pxm3kntl",
+          "address": "enigma1ssxxw0r0x3t5egsj6zyhjpkr0nwd08pxm3kntl",
           "coins": [
             {
               "denom": "anom",
@@ -17527,7 +17527,7 @@
           ]
         },
         {
-          "address": "onomy1se84n9t5ufpjerjxph8rj4c4zw57ylp5z4ymqz",
+          "address": "enigma1se84n9t5ufpjerjxph8rj4c4zw57ylp5z4ymqz",
           "coins": [
             {
               "denom": "anom",
@@ -17536,7 +17536,7 @@
           ]
         },
         {
-          "address": "onomy1se7h6vnszjz5qa2xgnlgdy8rz28p96yuujpz0h",
+          "address": "enigma1se7h6vnszjz5qa2xgnlgdy8rz28p96yuujpz0h",
           "coins": [
             {
               "denom": "anom",
@@ -17545,7 +17545,7 @@
           ]
         },
         {
-          "address": "onomy13xl2yg73zrmncdrf2u6futsh9tfr6s38dzxdjl",
+          "address": "enigma13xl2yg73zrmncdrf2u6futsh9tfr6s38dzxdjl",
           "coins": [
             {
               "denom": "anom",
@@ -17554,7 +17554,7 @@
           ]
         },
         {
-          "address": "onomy1302z68lkj2qa4c9qxh387pr973k8ulvj6880vu",
+          "address": "enigma1302z68lkj2qa4c9qxh387pr973k8ulvj6880vu",
           "coins": [
             {
               "denom": "anom",
@@ -17563,7 +17563,7 @@
           ]
         },
         {
-          "address": "onomy13hf2tmvrdqwah8tfhtdv5lztt3723a3j6vg4zk",
+          "address": "enigma13hf2tmvrdqwah8tfhtdv5lztt3723a3j6vg4zk",
           "coins": [
             {
               "denom": "anom",
@@ -17572,7 +17572,7 @@
           ]
         },
         {
-          "address": "onomy137cq45lefy03tpuxwwueyae7mrkfhky2sl9ykf",
+          "address": "enigma137cq45lefy03tpuxwwueyae7mrkfhky2sl9ykf",
           "coins": [
             {
               "denom": "anom",
@@ -17581,7 +17581,7 @@
           ]
         },
         {
-          "address": "onomy1jqe34xjcphy260xep86huzsd7u2lup6ye66upt",
+          "address": "enigma1jqe34xjcphy260xep86huzsd7u2lup6ye66upt",
           "coins": [
             {
               "denom": "anom",
@@ -17590,7 +17590,7 @@
           ]
         },
         {
-          "address": "onomy1jz9k6nh808h6pwgff2e43nt8jvk2npr0mc92au",
+          "address": "enigma1jz9k6nh808h6pwgff2e43nt8jvk2npr0mc92au",
           "coins": [
             {
               "denom": "anom",
@@ -17599,7 +17599,7 @@
           ]
         },
         {
-          "address": "onomy1jvss4yydkhmyqh06thl758rpu4svprapa8furt",
+          "address": "enigma1jvss4yydkhmyqh06thl758rpu4svprapa8furt",
           "coins": [
             {
               "denom": "anom",
@@ -17608,7 +17608,7 @@
           ]
         },
         {
-          "address": "onomy1jc2wgsfm0dx8lq0rnpfc96cwkr3s69jwd3ylgz",
+          "address": "enigma1jc2wgsfm0dx8lq0rnpfc96cwkr3s69jwd3ylgz",
           "coins": [
             {
               "denom": "anom",
@@ -17617,7 +17617,7 @@
           ]
         },
         {
-          "address": "onomy1jaedtfgcdgvzdmw9ar0s2e2a636jwetdggcp5q",
+          "address": "enigma1jaedtfgcdgvzdmw9ar0s2e2a636jwetdggcp5q",
           "coins": [
             {
               "denom": "anom",
@@ -17626,7 +17626,7 @@
           ]
         },
         {
-          "address": "onomy1jlhp7460wpzx86ll5u3qew5xre5scucctdw8ek",
+          "address": "enigma1jlhp7460wpzx86ll5u3qew5xre5scucctdw8ek",
           "coins": [
             {
               "denom": "anom",
@@ -17635,7 +17635,7 @@
           ]
         },
         {
-          "address": "onomy1ny7vwv0s6tpq5wnczhvsc574n544d60c7xegrp",
+          "address": "enigma1ny7vwv0s6tpq5wnczhvsc574n544d60c7xegrp",
           "coins": [
             {
               "denom": "anom",
@@ -17644,7 +17644,7 @@
           ]
         },
         {
-          "address": "onomy1ngd69xtfy3egqm3wwtg6gwgd4dn6es8ewt7uem",
+          "address": "enigma1ngd69xtfy3egqm3wwtg6gwgd4dn6es8ewt7uem",
           "coins": [
             {
               "denom": "anom",
@@ -17653,7 +17653,7 @@
           ]
         },
         {
-          "address": "onomy1nw98sn5jrf7uvd5mh8faalnqezspzx9njuqypc",
+          "address": "enigma1nw98sn5jrf7uvd5mh8faalnqezspzx9njuqypc",
           "coins": [
             {
               "denom": "anom",
@@ -17662,7 +17662,7 @@
           ]
         },
         {
-          "address": "onomy1n426r3jk58la94mhlnufq57gllt2jaz7x84vxp",
+          "address": "enigma1n426r3jk58la94mhlnufq57gllt2jaz7x84vxp",
           "coins": [
             {
               "denom": "anom",
@@ -17671,7 +17671,7 @@
           ]
         },
         {
-          "address": "onomy1n7lhzg409hjlpluwzqykdm7ls7dydu37sudhmt",
+          "address": "enigma1n7lhzg409hjlpluwzqykdm7ls7dydu37sudhmt",
           "coins": [
             {
               "denom": "anom",
@@ -17680,7 +17680,7 @@
           ]
         },
         {
-          "address": "onomy15xp4qmca4xshfyypdfkl47a43259t6swulv3vv",
+          "address": "enigma15xp4qmca4xshfyypdfkl47a43259t6swulv3vv",
           "coins": [
             {
               "denom": "anom",
@@ -17689,7 +17689,7 @@
           ]
         },
         {
-          "address": "onomy1525nrrumgc6cd3fexj9cyaanmh93j9a4s9txdr",
+          "address": "enigma1525nrrumgc6cd3fexj9cyaanmh93j9a4s9txdr",
           "coins": [
             {
               "denom": "anom",
@@ -17698,7 +17698,7 @@
           ]
         },
         {
-          "address": "onomy15t8mdf0zmfhupzjduq3glhchr82ex7enqapp0s",
+          "address": "enigma15t8mdf0zmfhupzjduq3glhchr82ex7enqapp0s",
           "coins": [
             {
               "denom": "anom",
@@ -17707,7 +17707,7 @@
           ]
         },
         {
-          "address": "onomy15n6le5cae0n9mmgempsalrdqp7p7eqqd3jtqg7",
+          "address": "enigma15n6le5cae0n9mmgempsalrdqp7p7eqqd3jtqg7",
           "coins": [
             {
               "denom": "anom",
@@ -17716,7 +17716,7 @@
           ]
         },
         {
-          "address": "onomy140apyzxhhf38kn7pxkdhhy27vuxytdlt7l053n",
+          "address": "enigma140apyzxhhf38kn7pxkdhhy27vuxytdlt7l053n",
           "coins": [
             {
               "denom": "anom",
@@ -17725,7 +17725,7 @@
           ]
         },
         {
-          "address": "onomy14jsflphcuq9ugjj4y80ddgcd7mn3dy0fkk9af8",
+          "address": "enigma14jsflphcuq9ugjj4y80ddgcd7mn3dy0fkk9af8",
           "coins": [
             {
               "denom": "anom",
@@ -17734,7 +17734,7 @@
           ]
         },
         {
-          "address": "onomy14nxcjsh2fs6m6l8y7vedxvn0tfdy88uxmerqn2",
+          "address": "enigma14nxcjsh2fs6m6l8y7vedxvn0tfdy88uxmerqn2",
           "coins": [
             {
               "denom": "anom",
@@ -17743,7 +17743,7 @@
           ]
         },
         {
-          "address": "onomy14cgc53qhn737ns3jez4p748va79gdlknz02xyn",
+          "address": "enigma14cgc53qhn737ns3jez4p748va79gdlknz02xyn",
           "coins": [
             {
               "denom": "anom",
@@ -17752,7 +17752,7 @@
           ]
         },
         {
-          "address": "onomy14lxzsmlkwux7qvyzwhtnwt0k3twnccy6tedkhj",
+          "address": "enigma14lxzsmlkwux7qvyzwhtnwt0k3twnccy6tedkhj",
           "coins": [
             {
               "denom": "anom",
@@ -17761,7 +17761,7 @@
           ]
         },
         {
-          "address": "onomy1k8yvzugdrf040cah7822y7mgtmyhy5kklhv6sl",
+          "address": "enigma1k8yvzugdrf040cah7822y7mgtmyhy5kklhv6sl",
           "coins": [
             {
               "denom": "anom",
@@ -17770,7 +17770,7 @@
           ]
         },
         {
-          "address": "onomy1k2jqyk6f07khm72zrl6rrg99d4llvce5wjk5g8",
+          "address": "enigma1k2jqyk6f07khm72zrl6rrg99d4llvce5wjk5g8",
           "coins": [
             {
               "denom": "anom",
@@ -17779,7 +17779,7 @@
           ]
         },
         {
-          "address": "onomy1k334etgpz5nk9h8n3f0k7p9swd22wdv2mwcr3a",
+          "address": "enigma1k334etgpz5nk9h8n3f0k7p9swd22wdv2mwcr3a",
           "coins": [
             {
               "denom": "anom",
@@ -17788,7 +17788,7 @@
           ]
         },
         {
-          "address": "onomy1kusj70p529tk25ku86alkw63pc2d5mvjwyrpr8",
+          "address": "enigma1kusj70p529tk25ku86alkw63pc2d5mvjwyrpr8",
           "coins": [
             {
               "denom": "anom",
@@ -17797,7 +17797,7 @@
           ]
         },
         {
-          "address": "onomy1hfctuzmqptm00cns3k09eg9vn7lw0m3zgrs87f",
+          "address": "enigma1hfctuzmqptm00cns3k09eg9vn7lw0m3zgrs87f",
           "coins": [
             {
               "denom": "anom",
@@ -17806,7 +17806,7 @@
           ]
         },
         {
-          "address": "onomy1hd0l6yy6epecj87m27rjx64tz6kc0tqkc4s8af",
+          "address": "enigma1hd0l6yy6epecj87m27rjx64tz6kc0tqkc4s8af",
           "coins": [
             {
               "denom": "anom",
@@ -17815,7 +17815,7 @@
           ]
         },
         {
-          "address": "onomy1hs7udued6ka7wt3llxyu0a90azccmrj3ff5lwh",
+          "address": "enigma1hs7udued6ka7wt3llxyu0a90azccmrj3ff5lwh",
           "coins": [
             {
               "denom": "anom",
@@ -17824,7 +17824,7 @@
           ]
         },
         {
-          "address": "onomy16nqkt8gzzd7v5xzhzahj2chfkm2gfj6hvpyf65",
+          "address": "enigma16nqkt8gzzd7v5xzhzahj2chfkm2gfj6hvpyf65",
           "coins": [
             {
               "denom": "anom",
@@ -17833,7 +17833,7 @@
           ]
         },
         {
-          "address": "onomy1679kuqsrstjenymnfxzpn6ppsfqhw60gfadgwc",
+          "address": "enigma1679kuqsrstjenymnfxzpn6ppsfqhw60gfadgwc",
           "coins": [
             {
               "denom": "anom",
@@ -17842,7 +17842,7 @@
           ]
         },
         {
-          "address": "onomy16lrfwgrsvhgf8n3j0q0rxvf9mmmfhss6ffqujq",
+          "address": "enigma16lrfwgrsvhgf8n3j0q0rxvf9mmmfhss6ffqujq",
           "coins": [
             {
               "denom": "anom",
@@ -17851,7 +17851,7 @@
           ]
         },
         {
-          "address": "onomy1mp6vz8q8rgzpaz6atgl4ed04cry985gvkfav2m",
+          "address": "enigma1mp6vz8q8rgzpaz6atgl4ed04cry985gvkfav2m",
           "coins": [
             {
               "denom": "anom",
@@ -17860,7 +17860,7 @@
           ]
         },
         {
-          "address": "onomy1m4f39dyffmly6m7c0f6uvktlges2v0j76akssh",
+          "address": "enigma1m4f39dyffmly6m7c0f6uvktlges2v0j76akssh",
           "coins": [
             {
               "denom": "anom",
@@ -17869,7 +17869,7 @@
           ]
         },
         {
-          "address": "onomy1uz04037m5kp2jkz2ku4aa2emzdc55rsm9t7scl",
+          "address": "enigma1uz04037m5kp2jkz2ku4aa2emzdc55rsm9t7scl",
           "coins": [
             {
               "denom": "anom",
@@ -17878,7 +17878,7 @@
           ]
         },
         {
-          "address": "onomy1utectfedtcwkk6y8znngrcwgpla4adqqgg70et",
+          "address": "enigma1utectfedtcwkk6y8znngrcwgpla4adqqgg70et",
           "coins": [
             {
               "denom": "anom",
@@ -17887,7 +17887,7 @@
           ]
         },
         {
-          "address": "onomy1uvfe4swadqtp5haf9q79x4ehyrqq2q9ft5qwr6",
+          "address": "enigma1uvfe4swadqtp5haf9q79x4ehyrqq2q9ft5qwr6",
           "coins": [
             {
               "denom": "anom",
@@ -17896,7 +17896,7 @@
           ]
         },
         {
-          "address": "onomy1ueuncjn7devskqjjweyjhg6fvqngrzrnqaw0je",
+          "address": "enigma1ueuncjn7devskqjjweyjhg6fvqngrzrnqaw0je",
           "coins": [
             {
               "denom": "anom",
@@ -17905,7 +17905,7 @@
           ]
         },
         {
-          "address": "onomy1ayzn743ec4en598x2kgegupd2kmpjgasf9fzzj",
+          "address": "enigma1ayzn743ec4en598x2kgegupd2kmpjgasf9fzzj",
           "coins": [
             {
               "denom": "anom",
@@ -17914,7 +17914,7 @@
           ]
         },
         {
-          "address": "onomy1axwljg23zmqqf7cndld7a4umjudkunuceyanzp",
+          "address": "enigma1axwljg23zmqqf7cndld7a4umjudkunuceyanzp",
           "coins": [
             {
               "denom": "anom",
@@ -17923,7 +17923,7 @@
           ]
         },
         {
-          "address": "onomy1a80f2tudr06k6jtg8yhgrq4and80sllj0wcz3j",
+          "address": "enigma1a80f2tudr06k6jtg8yhgrq4and80sllj0wcz3j",
           "coins": [
             {
               "denom": "anom",
@@ -17932,7 +17932,7 @@
           ]
         },
         {
-          "address": "onomy1ajnw4xzw8969fw39dr2e6f035nxmpsmv0v0sdk",
+          "address": "enigma1ajnw4xzw8969fw39dr2e6f035nxmpsmv0v0sdk",
           "coins": [
             {
               "denom": "anom",
@@ -17941,7 +17941,7 @@
           ]
         },
         {
-          "address": "onomy1ah0e5dhnxasxzhcrss5h3r80lg5udaakjdyrx4",
+          "address": "enigma1ah0e5dhnxasxzhcrss5h3r80lg5udaakjdyrx4",
           "coins": [
             {
               "denom": "anom",
@@ -17950,7 +17950,7 @@
           ]
         },
         {
-          "address": "onomy1acuhm7vywaus7n6kw7486cvplc48jvc5przh4f",
+          "address": "enigma1acuhm7vywaus7n6kw7486cvplc48jvc5przh4f",
           "coins": [
             {
               "denom": "anom",
@@ -17959,7 +17959,7 @@
           ]
         },
         {
-          "address": "onomy1au9v2xpgpt2327y5ngqkmpuk4e8mlr7sxswvff",
+          "address": "enigma1au9v2xpgpt2327y5ngqkmpuk4e8mlr7sxswvff",
           "coins": [
             {
               "denom": "anom",
@@ -17968,7 +17968,7 @@
           ]
         },
         {
-          "address": "onomy17xxstdkwr9fe0tldp8h9hee3w2ltz2al5c5f44",
+          "address": "enigma17xxstdkwr9fe0tldp8h9hee3w2ltz2al5c5f44",
           "coins": [
             {
               "denom": "anom",
@@ -17977,7 +17977,7 @@
           ]
         },
         {
-          "address": "onomy17mvfw0vu9fpwnnhykqmrg4dsfjwgxumytg9jjz",
+          "address": "enigma17mvfw0vu9fpwnnhykqmrg4dsfjwgxumytg9jjz",
           "coins": [
             {
               "denom": "anom",
@@ -17986,7 +17986,7 @@
           ]
         },
         {
-          "address": "onomy17ml2a62eaqyzr5rr4scgmdpkvy3akq76sctwty",
+          "address": "enigma17ml2a62eaqyzr5rr4scgmdpkvy3akq76sctwty",
           "coins": [
             {
               "denom": "anom",
@@ -17995,7 +17995,7 @@
           ]
         },
         {
-          "address": "onomy17l2me5uxmyrqfp4tu43zdynaw0z3vf8p89463d",
+          "address": "enigma17l2me5uxmyrqfp4tu43zdynaw0z3vf8p89463d",
           "coins": [
             {
               "denom": "anom",
@@ -18004,7 +18004,7 @@
           ]
         },
         {
-          "address": "onomy1lwc7a6nmgr34qy6d693098mpd2sjlzk0hfu29t",
+          "address": "enigma1lwc7a6nmgr34qy6d693098mpd2sjlzk0hfu29t",
           "coins": [
             {
               "denom": "anom",
@@ -18110,8 +18110,8 @@
                   "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "225000000000000000000000",
-                "delegator_address": "onomy10pjgqyhz2c9km709nrglnsnprr0h8pnvs9ykzz",
-                "validator_address": "onomyvaloper10pjgqyhz2c9km709nrglnsnprr0h8pnvvzxp75",
+                "delegator_address": "enigma10pjgqyhz2c9km709nrglnsnprr0h8pnvs9ykzz",
+                "validator_address": "enigmavaloper10pjgqyhz2c9km709nrglnsnprr0h8pnvvzxp75",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
                   "key": "pfCvKs6uy+5BRC9gP2/Yjk8Altg+MsjZVt/4axNPkHk="
@@ -18123,8 +18123,8 @@
               },
               {
                 "@type": "/gravity.v1.MsgSetOrchestratorAddress",
-                "validator": "onomyvaloper10pjgqyhz2c9km709nrglnsnprr0h8pnvvzxp75",
-                "orchestrator": "onomy1wxe5rzs004e3ju07mcmzqfjk8nqu7dfxzy06rr",
+                "validator": "enigmavaloper10pjgqyhz2c9km709nrglnsnprr0h8pnvvzxp75",
+                "orchestrator": "enigma1wxe5rzs004e3ju07mcmzqfjk8nqu7dfxzy06rr",
                 "eth_address": "0xA36da34784Ba05A32c07500bb5DD63fbFC442039"
               }
             ],

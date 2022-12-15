@@ -1,6 +1,6 @@
 Build base image
 ```
- docker build -t onomy/dev-base:latest .
+ docker build -t enigma/dev-base:latest .
 ````
 
 Docker login
@@ -10,5 +10,5 @@ Docker login
 
 Docker push
 ```
- docker push onomy/dev-base:latest
+ docker push enigma/dev-base:latest
 ```

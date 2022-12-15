@@ -12,8 +12,8 @@ import (
 	sdkTypes "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/onomyprotocol/onomy/testutil/integration"
-	"github.com/onomyprotocol/onomy/testutil/retry"
+	"github.com/furyunderverse/enigma/testutil/integration"
+	"github.com/furyunderverse/enigma/testutil/retry"
 )
 
 func TestIntegrationBnomToAnom(t *testing.T) { // nolint:gocyclo, cyclop
@@ -25,7 +25,7 @@ func TestIntegrationBnomToAnom(t *testing.T) { // nolint:gocyclo, cyclop
 	defer ctx.Done()
 	const (
 		bootstrappingTimeout    = time.Minute
-		onomyDestinationAddress = "onomy1txg674n2km4ft6jfdccs94xtg8vl2kyksw3scl"
+		enigmaDestinationAddress = "enigma1txg674n2km4ft6jfdccs94xtg8vl2kyksw3scl"
 		// https://erc20faucet.com/
 		fauTokeAddress = "0xBA62BCfcAaFc6622853cca2BE6Ac7d845BC0f2Dc"
 	)
@@ -50,17 +50,17 @@ func TestIntegrationBnomToAnom(t *testing.T) { // nolint:gocyclo, cyclop
 		t.Fatal(err)
 	}
 
-	// run onomy chain
-	onomyChain, err := integration.NewOnomyChain()
+	// run enigma chain
+	enigmaChain, err := integration.NewEnigmaChain()
 	if err != nil {
 		t.Fatal(err)
 	}
 
-	if err := onomyChain.Start(bootstrappingTimeout); err != nil {
+	if err := enigmaChain.Start(bootstrappingTimeout); err != nil {
 		t.Fatal(err)
 	}
 
-	t.Logf("onomy chain is up, validator: %+v", onomyChain.Validator)
+	t.Logf("enigma chain is up, validator: %+v", enigmaChain.Validator)
 
 	// deploy gravity
 	err = retry.WithTimeout(func() error {
@@ -77,24 +77,24 @@ func TestIntegrationBnomToAnom(t *testing.T) { // nolint:gocyclo, cyclop
 	t.Log("gravity contract is deployed")
 
 	// start orchestrator
-	if err := bnomTestsBaseContainer.startOrchestrator(ctx, onomyChain.Validator.Mnemonic); err != nil {
+	if err := bnomTestsBaseContainer.startOrchestrator(ctx, enigmaChain.Validator.Mnemonic); err != nil {
 		t.Fatal(err)
 	}
 	t.Log("orchestrator is started")
 
-	// send bNOM tokens to onomy
+	// send bNOM tokens to enigma
 	erc20Amount := int64(10)
-	if err := bnomTestsBaseContainer.sendToCosmos(ctx, integration.BnomERC20Address, erc20Amount, onomyDestinationAddress); err != nil {
+	if err := bnomTestsBaseContainer.sendToCosmos(ctx, integration.BnomERC20Address, erc20Amount, enigmaDestinationAddress); err != nil {
 		t.Fatal(err)
 	}
-	if err := bnomTestsBaseContainer.sendToCosmos(ctx, fauTokeAddress, erc20Amount, onomyDestinationAddress); err != nil {
+	if err := bnomTestsBaseContainer.sendToCosmos(ctx, fauTokeAddress, erc20Amount, enigmaDestinationAddress); err != nil {
 		t.Fatal(err)
 	}
 	t.Log("ERC20 tokens are sent to the gravity contract")
 
 	// waif for the bNOM on the validator balance
 	err = retry.WithTimeout(func() error {
-		balance, err := onomyChain.GetAccountBalance(onomyDestinationAddress)
+		balance, err := enigmaChain.GetAccountBalance(enigmaDestinationAddress)
 		if err != nil {
 			return err
 		}
@@ -111,11 +111,11 @@ func TestIntegrationBnomToAnom(t *testing.T) { // nolint:gocyclo, cyclop
 			}
 		}
 		if checks == 2 {
-			t.Log(fmt.Sprintf("%q reveived test tokens", onomyDestinationAddress))
+			t.Log(fmt.Sprintf("%q reveived test tokens", enigmaDestinationAddress))
 			return nil
 		}
 
-		err = fmt.Errorf("the %q hasn't received the %s tokens yet, balance: %+v", onomyDestinationAddress, integration.BnomERC20Address, balance)
+		err = fmt.Errorf("the %q hasn't received the %s tokens yet, balance: %+v", enigmaDestinationAddress, integration.BnomERC20Address, balance)
 		t.Logf("%v, will be retried in %d", err, retry.DefaultRetryTimeout)
 
 		return err

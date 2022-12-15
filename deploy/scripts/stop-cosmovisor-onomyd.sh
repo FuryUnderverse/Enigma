@@ -1,6 +1,6 @@
 #!/bin/bash
 set -eu
 
-echo "Stopping onomy node"
+echo "Stopping enigma node"
 
-pkill cosmovisor && echo "cosmovisor-onomyd is stopped"
+pkill cosmovisor && echo "cosmovisor-enigmad is stopped"

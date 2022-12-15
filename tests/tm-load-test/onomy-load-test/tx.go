@@ -13,7 +13,7 @@ import (
 	xauthsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 
-	_ "github.com/onomyprotocol/onomy/app"
+	_ "github.com/furyunderverse/enigma/app"
 )
 
 const (
@@ -23,7 +23,7 @@ const (
 	txFees        = 5
 	memo          = ""
 	timeoutHeight = 5
-	chainID       = "onomy"
+	chainID       = "enigma"
 	accountNo     = 0
 	sequence      = 0
 )

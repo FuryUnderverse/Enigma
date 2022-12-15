@@ -21,6 +21,6 @@ ADD https://github.com/onomyprotocol/cosmos-gravity-bridge/releases/download/$ET
 RUN chmod +x /solidity/contract-deployer
 # the actual source code for this repo, this **only** includes checked in files!
 # this is a bit of a pain but it does speed things up a lot
-ADD onomy.tar.gz /
+ADD enigma.tar.gz /
 # build steps for all codebases in this repo, must be below the add statement
-RUN pushd /onomy/ && make install
+RUN pushd /enigma/ && make install

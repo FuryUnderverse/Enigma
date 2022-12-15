@@ -1,10 +1,10 @@
 syntax = "proto3";
-package onomyprotocol.dao.v1;
+package enigma.dao.v1;
 
 import "gogoproto/gogo.proto";
 import "cosmos/base/v1beta1/coin.proto";
 
-option go_package = "github.com/onomyprotocol/onomy/x/dao/types";
+option go_package = "github.com/furyunderverse/enigma/x/dao/types";
 option (gogoproto.equal_all) = true;
 
 // FundTreasuryProposal details a dao fund treasury proposal.

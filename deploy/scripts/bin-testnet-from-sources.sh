@@ -1,17 +1,17 @@
 #Setting up constants
-ONOMY_HOME=$HOME/.onomy
-ONOMY_SRC=$ONOMY_HOME/src/onomy
-COSMOVISOR_SRC=$ONOMY_HOME/src/cosmovisor
+ENIGMA_HOME=$HOME/.enigma
+ENIGMA_SRC=$ENIGMA_HOME/src/enigma
+COSMOVISOR_SRC=$ENIGMA_HOME/src/cosmovisor
 
-ONOMY_VERSION="v0.1.0"
+ENIGMA_VERSION="v0.1.0"
 COSMOVISOR_VERSION="cosmovisor-v1.0.1"
 
-mkdir -p $ONOMY_HOME
-mkdir -p $ONOMY_HOME/src
-mkdir -p $ONOMY_HOME/bin
-mkdir -p $ONOMY_HOME/logs
-mkdir -p $ONOMY_HOME/cosmovisor/genesis/bin
-mkdir -p $ONOMY_HOME/cosmovisor/upgrades/bin
+mkdir -p $ENIGMA_HOME
+mkdir -p $ENIGMA_HOME/src
+mkdir -p $ENIGMA_HOME/bin
+mkdir -p $ENIGMA_HOME/logs
+mkdir -p $ENIGMA_HOME/cosmovisor/genesis/bin
+mkdir -p $ENIGMA_HOME/cosmovisor/upgrades/bin
 
 echo "-----------installing dependencies---------------"
 sudo dnf -y update
@@ -39,29 +39,29 @@ export GOPATH=$HOME/go
 echo "export GOPATH=$HOME/go" >> ~/.bashrc
 go version
 
-echo "----------------------installing onomy---------------"
-git clone -b $ONOMY_VERSION https://github.com/onomyprotocol/onomy.git $ONOMY_SRC
-cd $ONOMY_SRC
+echo "----------------------installing enigma---------------"
+git clone -b $ENIGMA_VERSION https://github.com/furyunderverse/enigma.git $ENIGMA_SRC
+cd $ENIGMA_SRC
 make build
-mv onomyd $ONOMY_HOME/cosmovisor/genesis/bin/onomyd
+mv enigmad $ENIGMA_HOME/cosmovisor/genesis/bin/enigmad
 
 echo "-------------------installing cosmovisor-----------------------"
-git clone -b $COSMOVISOR_VERSION https://github.com/onomyprotocol/onomy-sdk $COSMOVISOR_SRC
+git clone -b $COSMOVISOR_VERSION https://github.com/furyunderverse/enigma-sdk $COSMOVISOR_SRC
 cd $COSMOVISOR_SRC
 make cosmovisor
-cp cosmovisor/cosmovisor $ONOMY_HOME/bin/cosmovisor
+cp cosmovisor/cosmovisor $ENIGMA_HOME/bin/cosmovisor
 
 echo "-------------------adding binaries to path-----------------------"
-chmod +x $ONOMY_HOME/bin/*
-export PATH=$PATH:$ONOMY_HOME/bin
-chmod +x $ONOMY_HOME/cosmovisor/genesis/bin/*
-export PATH=$PATH:$ONOMY_HOME/cosmovisor/genesis/bin
+chmod +x $ENIGMA_HOME/bin/*
+export PATH=$PATH:$ENIGMA_HOME/bin
+chmod +x $ENIGMA_HOME/cosmovisor/genesis/bin/*
+export PATH=$PATH:$ENIGMA_HOME/cosmovisor/genesis/bin
 
 echo "export PATH=$PATH" >> ~/.bashrc
 
 # set the cosmovisor environments
-echo "export DAEMON_HOME=$ONOMY_HOME/" >> ~/.bashrc
-echo "export DAEMON_NAME=onomyd" >> ~/.bashrc
+echo "export DAEMON_HOME=$ENIGMA_HOME/" >> ~/.bashrc
+echo "export DAEMON_NAME=enigmad" >> ~/.bashrc
 echo "export DAEMON_RESTART_AFTER_UPGRADE=true" >> ~/.bashrc
 
-echo "Onomy binaries are installed successfully."
+echo "Enigma binaries are installed successfully."

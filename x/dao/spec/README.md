@@ -9,7 +9,7 @@ parent:
 
 ## Abstract
 
-This paper specifies the DAO (Decentralized Autonomous Organization) module of the onomy chain. The DAO module provides
+This paper specifies the DAO (Decentralized Autonomous Organization) module of the enigma chain. The DAO module provides
 the advanced model of funding and exchange using governance proposals. Additionally, it extends the existing
 staking by the dynamic delegation of the staking tokens from the treasury to the validators.
 
